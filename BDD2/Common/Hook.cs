@@ -13,7 +13,7 @@ using TechTalk.SpecFlow;
 namespace BDD2.Common
 {
     [Binding]
-    public class Hooks 
+    public class Hooks
     {
         private static ExtentTest _feature; // nodo para a Feature
         private static ExtentTest _scenario; // nodo para o Scenario
@@ -53,26 +53,54 @@ namespace BDD2.Common
             _scenario = _feature.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
         }
 
-        [AfterStep]
-        public static void InsertReportingSteps()
+        public void Initialize()
         {
-            // aqui vou verificar o tipo de passos que nosso teste automatizado terá
-            // por padrão temos o 3 principais: Given, When e Then que podem ser acompanhados de And
-            switch (ScenarioStepContext.Current.StepInfo.StepDefinitionType)
-            {
-                case TechTalk.SpecFlow.Bindings.StepDefinitionType.Given:
-                    _scenario.StepDefinitionGiven(); // extension method
-                    break;
 
-                case TechTalk.SpecFlow.Bindings.StepDefinitionType.Then:
-                    _scenario.StepDefinitionThen(); // extension method
-                    break;
-
-                case TechTalk.SpecFlow.Bindings.StepDefinitionType.When:
-                    _scenario.StepDefinitionWhen(); // extension method
-                    break;
-            }
+            //Create dynamic scenario name
+            _scenario = _feature.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
         }
+
+        [AfterStep]
+        public void InsertReportingSteps()
+        {
+
+            var stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
+
+            if (ScenarioContext.Current.TestError == null)
+            {
+                if (stepType == "Given")
+                    _scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
+                else if (stepType == "When")
+                    _scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text);
+                else if (stepType == "Then")
+                    _scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text);
+                else if (stepType == "And")
+                    _scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
+            }
+            else if (ScenarioContext.Current.TestError != null)
+            {
+                if (stepType == "Given")
+                    _scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.InnerException);
+                else if (stepType == "When")
+                    _scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.InnerException);
+                else if (stepType == "Then")
+                    _scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.Message);
+            }
+
+            //Pending Status
+            if (ScenarioContext.Current.ScenarioExecutionStatus.ToString() == "StepDefinitionPending")
+            {
+                if (stepType == "Given")
+                    _scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+                else if (stepType == "When")
+                    _scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+                else if (stepType == "Then")
+                    _scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+
+            }
+
+        }
+
 
         [AfterTestRun]
         public static void FlushExtent()
