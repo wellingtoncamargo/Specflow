@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SilverlightUnitTestAdapter.Plugin</name>
+    </assembly>
+    <members>
+        <member name="T:SilverlightUnitTestAdapter.Plugin.IPlugin">
+            <summary>
+            Plugin.
+            </summary>
+        </member>
+        <member name="M:SilverlightUnitTestAdapter.Plugin.IPlugin.TransformTestResult(Microsoft.VisualStudio.TestPlatform.ObjectModel.Logging.IMessageLogger,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestResult)">
+            <summary>
+            Transforms the test result.
+            </summary>
+            <param name="logger">The logger.</param>
+            <param name="testResult">The test result.</param>
+        </member>
+    </members>
+</doc>

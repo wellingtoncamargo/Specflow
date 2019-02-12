@@ -14,7 +14,7 @@ namespace BDD_SpecFlow_API
         [TestMethod]
         public void TestMethod1()
         {
-            var client = new RestClient("http://api.postmon.com.br/v1/cep");
+            var client = new RestClient("http://api.postmon.com.br/v1/cep/");
             var request = new RestRequest("/8105010",Method.GET) { RequestFormat = DataFormat.Json };
             var response = client.Execute(request);
             if (response.StatusDescription != "OK" )
@@ -61,6 +61,7 @@ namespace BDD_SpecFlow_API
             
             Console.WriteLine(response.Data+ "Campo vazio...");
             Console.WriteLine(response.Content);
+            Console.WriteLine(response.StatusCode);
 
         }
     }
