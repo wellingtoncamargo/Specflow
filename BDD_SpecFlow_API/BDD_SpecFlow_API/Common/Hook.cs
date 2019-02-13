@@ -17,6 +17,7 @@ namespace BDD_SpecFlow_API.Common
         private static ExtentTest _feature; // nodo para a Feature
         private static ExtentTest _scenario; // nodo para o Scenario
         private static ExtentReports _extent; // objeto do ExtentReports que será criado
+        private static Status logstatus;
 
         // aqui estou salvando na pasta bin/debug do projeto, o arquivo de relatório chamado ExtentReportAmazon.html
         private static readonly string PathReport = $"{AppDomain.CurrentDomain.BaseDirectory}ExtentReport.html";
@@ -59,6 +60,7 @@ namespace BDD_SpecFlow_API.Common
             _scenario = _feature.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
         }
 
+
         [AfterStep]
         public void InsertReportingSteps()
         {
@@ -72,7 +74,7 @@ namespace BDD_SpecFlow_API.Common
                 else if (stepType == "When")
                     _scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text);
                 else if (stepType == "Then")
-                    _scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Pass(ScenarioContext.Current.ScenarioExecutionStatus.ToString()); 
+                    _scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text); 
                 else if (stepType == "And")
                     _scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
             }

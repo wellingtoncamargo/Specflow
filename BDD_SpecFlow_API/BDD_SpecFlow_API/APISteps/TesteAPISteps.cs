@@ -13,6 +13,13 @@ namespace BDD_SpecFlow_API
         private RestClient _restClient;
         private IRestResponse Res;
 
+        [Given(@"I Run Scenario '(.*)'")]
+        public void GivenIRunScenario(string p0)
+        {
+            Console.WriteLine(p0);
+        }
+
+
         [Given(@"que eu use a API '(.*)'")]
         public void DadoQueEuUseAAPI(string p0)
         {
@@ -46,13 +53,14 @@ namespace BDD_SpecFlow_API
         {
             if (Res.StatusDescription != "OK")
             {
-                Console.WriteLine("Erro: 405 - " + Res.StatusCode.ToString());
+                Console.WriteLine(Res.StatusCode.ToString());
             }
             else
             {
                 JObject obs = JObject.Parse(Res.Content);
-                Console.WriteLine(obs.ToString());
+                Console.Write(obs.ToString());
             }
+            
         }
     }
 }
