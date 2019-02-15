@@ -17,7 +17,6 @@ namespace BDD_SpecFlow_API.Common
         private static ExtentTest _feature; // nodo para a Feature
         private static ExtentTest _scenario; // nodo para o Scenario
         private static ExtentReports _extent; // objeto do ExtentReports que será criado
-        private static Status logstatus;
 
         // aqui estou salvando na pasta bin/debug do projeto, o arquivo de relatório chamado ExtentReportAmazon.html
         private static readonly string PathReport = $"{AppDomain.CurrentDomain.BaseDirectory}ExtentReport.html";
@@ -74,7 +73,7 @@ namespace BDD_SpecFlow_API.Common
                 else if (stepType == "When")
                     _scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text);
                 else if (stepType == "Then")
-                    _scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text); 
+                    _scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text);
                 else if (stepType == "And")
                     _scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
             }
@@ -100,6 +99,17 @@ namespace BDD_SpecFlow_API.Common
 
             }
 
+            ////Pending skipped 
+            //if (ScenarioContext.Current.ToString() == "StepDefinitionPending")
+            //{
+            //    if (stepType == "Given")
+            //        _scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Skip(ScenarioContext.Current.TestError.Message);
+            //    else if (stepType == "When")
+            //        _scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+            //    else if (stepType == "Then")
+            //        _scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
+
+            //}
         }
 
 

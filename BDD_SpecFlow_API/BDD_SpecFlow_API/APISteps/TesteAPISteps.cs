@@ -40,6 +40,27 @@ namespace BDD_SpecFlow_API
             Res = _restClient.Execute(_restRequest);
         }
 
+        [When(@"informando o body '(.*)'")]
+        public void WhenInformoOBody(string data)
+        {
+            _restRequest = new RestRequest();
+            _restRequest.AddHeader("Content-Type", "application/json");
+            _restRequest.AddJsonBody(data);
+        }
+
+        [When(@"realizo um POST em '(.*)'")]
+        public void WhenRealizoUmPOSTEm(string p0)
+        {
+            _restRequest = new RestRequest(p0, Method.POST) { RequestFormat = DataFormat.Json };
+            Res = _restClient.Execute(_restRequest);
+        }
+
+        [When(@"realizo um PUT em '(.*)'")]
+        public void WhenRealizoUmPUTEm(string p0)
+        {
+            _restRequest = new RestRequest(p0, Method.PUT) { RequestFormat = DataFormat.Json };
+            Res = _restClient.Execute(_restRequest);
+        }
 
         [Then(@"retorno devera ser '(.*)'")]
         public void EntaoRetornoDeveraSer(string p0)
@@ -53,7 +74,7 @@ namespace BDD_SpecFlow_API
         {
             if (Res.StatusDescription != "OK")
             {
-                Console.WriteLine(Res.StatusCode.ToString());
+                Console.WriteLine(Res.StatusDescription.ToString());
             }
             else
             {

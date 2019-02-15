@@ -87,9 +87,9 @@ namespace BDD_SpecFlow_API.Feature
 #line 11
  testRunner.When("realizar um GET", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 12
- testRunner.Then("as informações solicitadas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("retorno devera ser \'Ok\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 13
- testRunner.And("retorno devera ser \'OK\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("as informações solicitadas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -125,6 +125,31 @@ namespace BDD_SpecFlow_API.Feature
  testRunner.Then("as informações solicitadas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 22
  testRunner.And(string.Format("retorno devera ser \'{0}\'", status), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Get Dogs")]
+        public virtual void GetDogs()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get Dogs", null, ((string[])(null)));
+#line 32
+ this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 33
+ testRunner.Given("I Run Scenario \'Consulta de Dog\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 34
+ testRunner.Given("que eu use a API \'http://petstore.swagger.io/v2\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 35
+ testRunner.When("informando o body \'\"{\"id\": 0,\"petId\": 0,\"quantity\": 0,\"shipDate\": \"2019-02-15T13:" +
+                    "27:13.001Z\",\"status\": \"placed\",\"complete\": false}\"\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 36
+ testRunner.And("realizo um POST em \'/store/order\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 37
+ testRunner.Then("retorno devera ser \'UnsupportedMediaType\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 38
+ testRunner.Then("as informações solicitadas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
