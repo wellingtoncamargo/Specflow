@@ -59,6 +59,7 @@ C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\DnsClient.
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\EntityFramework.dll
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\ExtentReports.dll
+C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\HtmlAgilityPack.dll
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\ImpromptuInterface.dll
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
@@ -80,6 +81,8 @@ C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\TechTalk.S
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\DnsClient.xml
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\EntityFramework.xml
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\HtmlAgilityPack.xml
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\ImpromptuInterface.xml
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
@@ -99,4 +102,3 @@ C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\obj\Debug\BDD_SpecFl
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\obj\Debug\BDD_SpecFlow_API.csproj.CopyComplete
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\obj\Debug\BDD_SpecFlow_API.dll
 C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\obj\Debug\BDD_SpecFlow_API.pdb
-C:\Users\wncg\C-\Specflow\BDD_SpecFlow_API\BDD_SpecFlow_API\obj\Debug\BDD_SpecFlow_API.csprojAssemblyReference.cache

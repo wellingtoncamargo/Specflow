@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BDD_SpecFlow_API.Model
+namespace BDD_SpecFlow_API.BaseSteps
+
 {
     public class Posts
     {

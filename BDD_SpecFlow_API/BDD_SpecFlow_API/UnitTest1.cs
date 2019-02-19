@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using BDD_SpecFlow_API.Model;
+using BDD_SpecFlow_API.BaseSteps;
 using BDD_SpecFlow_API.Util.Banco;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json.Linq;

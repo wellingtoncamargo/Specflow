@@ -73,23 +73,42 @@ namespace BDD_SpecFlow_API.Feature
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Add two numbers")]
         [NUnit.Framework.CategoryAttribute("Positivo")]
-        public virtual void AddTwoNumbers()
+        [NUnit.Framework.TestCaseAttribute("Printando cep", "cep", null)]
+        [NUnit.Framework.TestCaseAttribute("Printando nome", "estado_info/nome", null)]
+        [NUnit.Framework.TestCaseAttribute("Printando estado codigo_ibge", "estado_info/codigo_ibge", null)]
+        [NUnit.Framework.TestCaseAttribute("Printando estado codigo_ibge", "estado_info/area_km2", null)]
+        [NUnit.Framework.TestCaseAttribute("Printando bairro", "bairro", null)]
+        [NUnit.Framework.TestCaseAttribute("Printando cidade", "cidade", null)]
+        [NUnit.Framework.TestCaseAttribute("Printando logradouro", "logradouro", null)]
+        [NUnit.Framework.TestCaseAttribute("Printando cidade codigo_ibge", "cidade_info/codigo_ibge", null)]
+        [NUnit.Framework.TestCaseAttribute("Printando cidade area_km2", "cidade_info/area_km2", null)]
+        [NUnit.Framework.TestCaseAttribute("Printando estado", "estado", null)]
+        public virtual void AddTwoNumbers(string teste, string var, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers", null, new string[] {
-                        "Positivo"});
+            string[] @__tags = new string[] {
+                    "Positivo"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers", null, @__tags);
 #line 8
  this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 9
- testRunner.Given("que eu use a API \'http://api.postmon.com.br/v1/cep/\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given(string.Format("I Run Scenario \'{0}\'", teste), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 10
- testRunner.And("informo o CEP \'07179260\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("que eu use a API \'http://api.postmon.com.br/v1/cep/\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 11
- testRunner.When("realizar um GET", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("informo o CEP \'07179260\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 12
- testRunner.Then("retorno devera ser \'Ok\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("realizar um GET", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 13
+ testRunner.Then("retorno devera ser \'OK\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 14
  testRunner.Then("as informações solicitadas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 15
+ testRunner.Given(string.Format("Eu salvo a variavel \'{0}\' como \'bairro\'", var), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -110,20 +129,20 @@ namespace BDD_SpecFlow_API.Feature
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Aleatorios", null, @__tags);
-#line 16
+#line 32
  this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 17
+#line 33
  testRunner.Given(string.Format("I Run Scenario \'{0}\'", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 18
+#line 34
  testRunner.Given("que eu use a API \'http://api.postmon.com.br/v1/cep/\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 19
+#line 35
  testRunner.And(string.Format("informo o CEP \'{0}\'", cep), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 20
+#line 36
  testRunner.When("realizar um GET", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 21
+#line 37
  testRunner.Then("as informações solicitadas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 22
+#line 38
  testRunner.And(string.Format("retorno devera ser \'{0}\'", status), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -134,21 +153,46 @@ namespace BDD_SpecFlow_API.Feature
         public virtual void GetDogs()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get Dogs", null, ((string[])(null)));
-#line 32
+#line 48
  this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 33
+#line 49
  testRunner.Given("I Run Scenario \'Consulta de Dog\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 34
+#line 50
  testRunner.Given("que eu use a API \'http://petstore.swagger.io/v2\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 35
- testRunner.When("informando o body \'\"{\"id\": 0,\"petId\": 0,\"quantity\": 0,\"shipDate\": \"2019-02-15T13:" +
-                    "27:13.001Z\",\"status\": \"placed\",\"complete\": false}\"\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 36
- testRunner.And("realizo um POST em \'/store/order\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 37
+#line 51
+ testRunner.When("informando o body \'\"{\"id\": 334,  \"username\": \"TEste\",  \"firstName\": \"tes\",  \"last" +
+                    "Name\": \"ter\",  \"email\": \"string@rrr.com\",  \"password\": \"123456\",  \"phone\": \"stri" +
+                    "ng\",  \"userStatus\": 1}\"\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 52
+ testRunner.And("realizo um POST em \'/user\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 53
  testRunner.Then("retorno devera ser \'UnsupportedMediaType\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 38
+#line 54
+ testRunner.Then("as informações solicitadas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Buscando Personagens de Star Wars")]
+        [NUnit.Framework.CategoryAttribute("Positivo")]
+        public virtual void BuscandoPersonagensDeStarWars()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Buscando Personagens de Star Wars", null, new string[] {
+                        "Positivo"});
+#line 57
+ this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 58
+ testRunner.Given("que eu use a API \'https://swapi.co/api\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 59
+ testRunner.And("informo o CEP \'/people/\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 60
+ testRunner.When("realizar um GET", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 61
+ testRunner.Then("retorno devera ser \'OK\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 62
  testRunner.Then("as informações solicitadas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

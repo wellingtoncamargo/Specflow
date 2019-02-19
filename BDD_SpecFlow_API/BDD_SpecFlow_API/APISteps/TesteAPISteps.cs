@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using RestSharp;
 using System;
+using System.Threading;
 using TechTalk.SpecFlow;
 
 namespace BDD_SpecFlow_API
@@ -12,6 +13,42 @@ namespace BDD_SpecFlow_API
         private RestRequest _restRequest;
         private RestClient _restClient;
         private IRestResponse Res;
+        private readonly IRestResponse p1;
+
+        [Given(@"Eu salvo a variavel '(.*)' como '(.*)'")]
+        public void GivenEuSalvoAVariavelComo(string p0, string p1)
+        {
+            // p0 = estado_info/nome
+
+            var routes = p0.Split('/');
+
+            JObject obs = JObject.Parse(Res.Content);
+            
+            //p1 = obs[$"{p0}"].ToString();
+            //p2 = p1[
+            JToken result = null;
+            foreach (var item in routes)
+            {
+                if (Int32.TryParse(item, out int value))
+                {
+                    if (result == null)
+                        result = obs[value];
+                    else
+                        result = result[value];
+                }
+                else
+                {
+                    if (result == null)
+                        result = obs[item];
+                    else
+                        result = result[item];
+                }
+            }
+
+            p1 = result.ToString();
+            Console.WriteLine(result.ToString());
+        }
+
 
         [Given(@"I Run Scenario '(.*)'")]
         public void GivenIRunScenario(string p0)
@@ -72,14 +109,17 @@ namespace BDD_SpecFlow_API
         [Then(@"as informações solicitadas")]
         public void EntaoAsInformacoesSolicitadas()
         {
-            if (Res.StatusDescription != "OK")
+            if (Res.StatusDescription == "OK")
             {
                 Console.WriteLine(Res.StatusDescription.ToString());
+                JObject obs = JObject.Parse(Res.Content);
+                Console.Write(obs.ToString());
+                
             }
             else
             {
-                JObject obs = JObject.Parse(Res.Content);
-                Console.Write(obs.ToString());
+               // JObject obs = JObject.Parse(Res.Content);
+                Console.Write(Res.StatusDescription.ToString());
             }
             
         }

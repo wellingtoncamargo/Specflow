@@ -25,7 +25,7 @@ namespace BDD_SpecFlow_API.Common
         public static void ConfigureReport()
         {
             // aqui informo o caminho do arquivo que será gerado criando um objeto ExtentHtmlReporter
-            var reporter = new ExtentHtmlReporter("C:/Users/wncg/source/repos/BDD_SpecFlow_API/BDD_SpecFlow_API/Report/");
+            var reporter = new ExtentHtmlReporter("C:/Users/wncg/C-/Specflow/BDD_SpecFlow_API/BDD_SpecFlow_API/Report/");
 
             reporter.Config.Theme = Theme.Dark;
 
