@@ -1,0 +1,40 @@
+﻿<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <BuildDependsOn>
+      GenerateSpecFlowAssemblyHooksFileTask;
+      $(BuildDependsOn)
+    </BuildDependsOn>
+    <CleanDependsOn>
+      $(CleanDependsOn)
+    </CleanDependsOn>
+    <RebuildDependsOn>
+      GenerateSpecFlowAssemblyHooksFileTask;
+      $(RebuildDependsOn)
+    </RebuildDependsOn>
+  </PropertyGroup>
+
+
+  <PropertyGroup>
+
+    <_SpecFlow_MsTestGeneratorPlugin Condition=" '$(MSBuildRuntimeType)' == 'Core'">netstandard2.0</_SpecFlow_MsTestGeneratorPlugin>
+    <_SpecFlow_MsTestGeneratorPlugin Condition=" '$(MSBuildRuntimeType)' != 'Core'">net471</_SpecFlow_MsTestGeneratorPlugin>
+    <_SpecFlow_MsTestGeneratorPluginPath>$(MSBuildThisFileDirectory)\$(_SpecFlow_MsTestGeneratorPlugin)\TechTalk.SpecFlow.MSTest.Generator.SpecFlowPlugin.dll</_SpecFlow_MsTestGeneratorPluginPath>
+
+    <_SpecFlow_MsTestRuntimePlugin Condition=" '$(TargetFrameworkIdentifier)' == '.NETCoreApp' ">netstandard2.0</_SpecFlow_MsTestRuntimePlugin>
+    <_SpecFlow_MsTestRuntimePlugin Condition=" '$(TargetFrameworkIdentifier)' == '.NETFramework' ">net45</_SpecFlow_MsTestRuntimePlugin>
+    <_SpecFlow_MsTestRuntimePluginPath>$(MSBuildThisFileDirectory)\..\lib\$(_SpecFlow_MsTestRuntimePlugin)\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll</_SpecFlow_MsTestRuntimePluginPath>
+
+    <GeneratedSpecFlowAssemblyHooksFile Condition="'$(GeneratedSpecFlowAssemblyHooksFile)' == ''">$(MSBuildThisFileDirectory)MSTest.AssemblyHooks$(DefaultLanguageSourceExtension)</GeneratedSpecFlowAssemblyHooksFile>
+    <GenerateSpecFlowAssemblyHooksFile Condition="'$(GenerateSpecFlowAssemblyHooksFile)' == ''">true</GenerateSpecFlowAssemblyHooksFile>
+
+  </PropertyGroup>
+
+  <Target Name="GenerateSpecFlowAssemblyHooksFileTask" Condition="'$(GenerateSpecFlowAssemblyHooksFile)' == 'true'">
+    <ItemGroup Condition="'$(Language)' == 'VB' or '$(Language)' == 'C#'">
+      <Compile Include="$(GeneratedSpecFlowAssemblyHooksFile)"/>
+    </ItemGroup>
+  </Target>
+
+
+</Project>

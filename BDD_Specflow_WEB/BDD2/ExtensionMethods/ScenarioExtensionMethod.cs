@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Bindings;
 
-namespace BDD2.ExtensionMethods
+namespace FrameWork.ExtensionMethods
 {
     public static class ScenarioExtensionMethod
     {

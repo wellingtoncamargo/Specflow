@@ -2,7 +2,7 @@
 using AventStack.ExtentReports.Gherkin.Model;
 using AventStack.ExtentReports.Reporter;
 using AventStack.ExtentReports.Reporter.Configuration;
-using BDD2.ExtensionMethods;
+using FrameWork.ExtensionMethods;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 
-namespace BDD2.Common
+namespace FrameWork.Common
 {
     [Binding]
     public class Hooks

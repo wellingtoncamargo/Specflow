@@ -1,0 +1,358 @@
+r
+Ó™◊È§û÷˜SpecFlow5*3
+$67b8895b-1b81-4cf9-9b68-0aa630476a6fÔ™◊È–ì√r
+∑´◊È‡îøóSpecFlow6*4
+$d3c56d15-ca46-4d61-8e54-e9c153247e7e∑´◊È¿Ô‹·:B8
+$d3c56d15-ca46-4d61-8e54-e9c153247e7eæ´◊È∏Ç”Êr
+£¨◊È»À«…SpecFlow5*3
+$9dfd0c71-415e-4deb-810d-ea562d6f3078§¨◊ÈàÚ,:B8
+$9dfd0c71-415e-4deb-810d-ea562d6f3078§¨◊È¯≥Ûår
+¬¨◊È»âõóSpecFlow6*4
+$1453e9b5-7112-403c-a16d-20d5ab186bda¬¨◊È˚¡÷†Bù
+$1453e9b5-7112-403c-a16d-20d5ab186bdaƒ¨◊È†˙¡Á‚No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        public void GivenEuSalvoOValorComo(string p0, string user1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        public void GivenEuSalvoOValorComo(string p0, string senha1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        public void GivenEuSalvoOValorComo(string p0, string btSair1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        public void GivenEuSalvoOValorComo(string p0, string btLogin1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        public void GivenEuSalvoOValorComo(string p0, string menu1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        public void GivenEuSalvoOValorComo(string p0, string combo1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        public void GivenEuSalvoOValorComo(string p0, string status1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+}
+5*3
+$85f91ca1-7595-44c5-938c-ad802155e6c2ƒ¨◊Èò¯ºXÙBÒ
+$85f91ca1-7595-44c5-938c-ad802155e6c2ƒ¨◊È§ôågª∂No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"que acesso a pagina '(.*)'")]
+        public void GivenQueAcessoAPagina(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [When(@"preencho o campo '(.*)' com o valor '(.*)'")]
+        public void WhenPreenchoOCampoComOValor(string p0, string p1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [When(@"preencho o campo '(.*)' com o valor '(.*)'")]
+        public void WhenPreenchoOCampoComOValor(string p0, int p1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Then(@"clico em '(.*)'")]
+        public void ThenClicoEm(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+}
+5*3
+$f9df887b-12c2-4ccd-9a74-0bdaabb5c19eƒ¨◊Èê‘èoª
+B∏
+
+$f9df887b-12c2-4ccd-9a74-0bdaabb5c19eƒ¨◊È»çüÇÅ
+¸	No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"que acesso a pagina '(.*)'")]
+        public void GivenQueAcessoAPagina(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"preencho o campo '(.*)' com o valor '(.*)'")]
+        public void GivenPreenchoOCampoComOValor(string p0, string p1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"preencho o campo '(.*)' com o valor '(.*)'")]
+        public void GivenPreenchoOCampoComOValor(string p0, int p1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"clico em '(.*)'")]
+        public void GivenClicoEm(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [When(@"clico em '(.*)'")]
+        public void WhenClicoEm(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Then(@"clico em '(.*)'")]
+        public void ThenClicoEm(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+}
+r
+Õ¨◊È–∫ê˚SpecFlow6*4
+$b838d0b1-7bb4-4e20-b8c4-87386ac12fb4Õ¨◊ÈºÒ∂¿°Bû
+$b838d0b1-7bb4-4e20-b8c4-87386ac12fb4Õ¨◊ÈƒâÜœÁ‚No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        public void GivenEuSalvoOValorComo(string p0, string user1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        public void GivenEuSalvoOValorComo(string p0, string senha1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        public void GivenEuSalvoOValorComo(string p0, string btSair1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        public void GivenEuSalvoOValorComo(string p0, string btLogin1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        public void GivenEuSalvoOValorComo(string p0, string menu1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        public void GivenEuSalvoOValorComo(string p0, string combo1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        public void GivenEuSalvoOValorComo(string p0, string status1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+}
+5*3
+$ab57acf1-2f6b-4917-bf74-f52d01c1796cŒ¨◊È®Ú∫ÙBÒ
+$ab57acf1-2f6b-4917-bf74-f52d01c1796cŒ¨◊Èåâæ'ª∂No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"que acesso a pagina '(.*)'")]
+        public void GivenQueAcessoAPagina(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [When(@"preencho o campo '(.*)' com o valor '(.*)'")]
+        public void WhenPreenchoOCampoComOValor(string p0, string p1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [When(@"preencho o campo '(.*)' com o valor '(.*)'")]
+        public void WhenPreenchoOCampoComOValor(string p0, int p1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Then(@"clico em '(.*)'")]
+        public void ThenClicoEm(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+}
+5*3
+$75583cdb-08b6-464a-b6f3-6d6e6b90aa6eŒ¨◊ÈËéí.∫
+B∑
+
+$75583cdb-08b6-464a-b6f3-6d6e6b90aa6eŒ¨◊È‹îÔ>Å
+¸	No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"que acesso a pagina '(.*)'")]
+        public void GivenQueAcessoAPagina(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"preencho o campo '(.*)' com o valor '(.*)'")]
+        public void GivenPreenchoOCampoComOValor(string p0, string p1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"preencho o campo '(.*)' com o valor '(.*)'")]
+        public void GivenPreenchoOCampoComOValor(string p0, int p1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"clico em '(.*)'")]
+        public void GivenClicoEm(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [When(@"clico em '(.*)'")]
+        public void WhenClicoEm(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Then(@"clico em '(.*)'")]
+        public void ThenClicoEm(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+}
+r
+·¨◊È‡ÎÀhSpecFlow6*4
+$784a77b8-dadc-42fd-b89d-0cba91fa0858·¨◊È‰±ì¶9B7
+$784a77b8-dadc-42fd-b89d-0cba91fa0858Â¨◊È‡¬˛6*4
+$a788ce2d-a367-44f4-b404-75f14f10d9d1Â¨◊È–€øü‚Bﬂ
+$a788ce2d-a367-44f4-b404-75f14f10d9d1Ó¨◊È∫˘ñ®£System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\wncg\source\repos\FrameWork\FrameWork\Util\Screenshot\220720191229501834_Login.png'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at OpenQA.Selenium.Screenshot.SaveAsFile(String fileName, ScreenshotImageFormat format)
+   at FrameWork.Steps.WebSteps.CalculoDoValorDoIRSteps._Screenshot(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\WebSteps\WebSteps.cs:line 123
+   at FrameWork.Steps.WebSteps.CalculoDoValorDoIRSteps.DadoQueEuAcessoAPagina(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\WebSteps\WebSteps.cs:line 40
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 3426*4
+$cc85dad6-b07a-4a3a-83ab-f06281ada973Ó¨◊È¸ã∑⁄‚Bﬂ
+$cc85dad6-b07a-4a3a-83ab-f06281ada973˜¨◊ÈÄ≥ø∏®£System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\wncg\source\repos\FrameWork\FrameWork\Util\Screenshot\220720191229599218_Login.png'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at OpenQA.Selenium.Screenshot.SaveAsFile(String fileName, ScreenshotImageFormat format)
+   at FrameWork.Steps.WebSteps.CalculoDoValorDoIRSteps._Screenshot(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\WebSteps\WebSteps.cs:line 123
+   at FrameWork.Steps.WebSteps.CalculoDoValorDoIRSteps.DadoQueEuAcessoAPagina(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\WebSteps\WebSteps.cs:line 40
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+ÈŒ◊ÈÙã‹JSpecFlow6*4
+$751e8f6e-da71-44f3-9deb-38827a6b001cÈŒ◊È¥∂„á:B8
+$751e8f6e-da71-44f3-9deb-38827a6b001cÌŒ◊È¯ ì»6*4
+$e1dc2b8e-b5b6-4f71-bf07-cbd77b02338dÓŒ◊Èÿ¯Ù˚‚Bﬂ
+$e1dc2b8e-b5b6-4f71-bf07-cbd77b02338d˘Œ◊Èº¯±Ë®£System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\wncg\source\repos\FrameWork\FrameWork\Util\Screenshot\220720191342334256_Login.png'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at OpenQA.Selenium.Screenshot.SaveAsFile(String fileName, ScreenshotImageFormat format)
+   at FrameWork.Steps.WebSteps.CalculoDoValorDoIRSteps._Screenshot(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\WebSteps\WebSteps.cs:line 123
+   at FrameWork.Steps.WebSteps.CalculoDoValorDoIRSteps.DadoQueEuAcessoAPagina(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\WebSteps\WebSteps.cs:line 40
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+‰œ◊Èƒ·…§SpecFlow6*4
+$86695f76-29c6-4015-a65f-35a3de8e36b8‰œ◊ÈÑ¨â‚9B7
+$86695f76-29c6-4015-a65f-35a3de8e36b8Èœ◊Èê¨˝e6*4
+$21a8717d-1244-4634-be35-0e2d9837fc6aÈœ◊È‡˝˙¨‚Bﬂ
+$21a8717d-1244-4634-be35-0e2d9837fc6aÒœ◊È¨©ñÆ®£System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\wncg\source\repos\FrameWork\FrameWork\Util\Screenshot\220720191344337944_Login.png'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at OpenQA.Selenium.Screenshot.SaveAsFile(String fileName, ScreenshotImageFormat format)
+   at FrameWork.Steps.WebSteps.CalculoDoValorDoIRSteps._Screenshot(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\WebSteps\WebSteps.cs:line 123
+   at FrameWork.Steps.WebSteps.CalculoDoValorDoIRSteps.DadoQueEuAcessoAPagina(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\WebSteps\WebSteps.cs:line 40
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+åÿ◊È¸≤…SpecFlow5*3
+$a1a4c13a-87d3-4608-bafe-b3d62cd940e4åÿ◊ÈÔY:B8
+$a1a4c13a-87d3-4608-bafe-b3d62cd940e4éÿ◊È‹Ùª´6*4
+$7777d259-1eb4-4aee-8803-9b8df6afb36aèÿ◊È®¡±ür
+†Ÿ◊È‹≤ªLSpecFlow6*4
+$f42c11b6-058d-4a8f-aaea-9bc48e8dc9e1†Ÿ◊È»»Ôê:B8
+$f42c11b6-058d-4a8f-aaea-9bc48e8dc9e1¢Ÿ◊È∏è•¥6*4
+$8b3949ea-f5de-4854-b3a9-8b6cedcfb083£Ÿ◊Èî“Ô±r
+‰Ÿ◊ÈÄáœÄSpecFlow6*4
+$74eaaa3c-1b63-4722-b030-ac12a02504c2‰Ÿ◊Èƒ≈›º9B7
+$74eaaa3c-1b63-4722-b030-ac12a02504c2ÁŸ◊ÈÃÄòh6*4
+$9bfbe314-737e-4c8e-800f-e8799925980aÁŸ◊È¨◊øû

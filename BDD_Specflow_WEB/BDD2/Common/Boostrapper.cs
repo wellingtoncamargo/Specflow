@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BDD2.Common
+namespace FrameWork.Common
 {
     public class Bootstrapper : IDisposable
     {

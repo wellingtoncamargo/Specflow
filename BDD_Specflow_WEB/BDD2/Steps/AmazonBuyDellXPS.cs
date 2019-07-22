@@ -1,5 +1,5 @@
-﻿using BDD2.Common;
-using BDD2.Pages;
+﻿using FrameWork.Common;
+using FrameWork.Pages;
 using BoDi;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 
-namespace BDD2.Steps
+namespace FrameWork.Steps
 {
     [Binding]
     // aqui eu herdei da classe Boostrapper, pois temos o objeto Driver criado nele

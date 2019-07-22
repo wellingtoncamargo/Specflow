@@ -45,3 +45,4 @@ C:\Users\wncg\source\repos\BDD2\BDD2\bin\Debug\nunit.framework.dll
 C:\Users\wncg\source\repos\BDD2\BDD2\bin\Debug\nunit.framework.pdb
 C:\Users\wncg\source\repos\BDD2\BDD2\bin\Debug\nunit.framework.xml
 C:\Users\wncg\source\Specflow\BDD_Specflow_WEB\BDD2\obj\Debug\SPECFLOW.csproj.CoreCompileInputs.cache
+C:\Users\wncg\source\Specflow\BDD_Specflow_WEB\BDD2\obj\Debug\SPECFLOW.csprojAssemblyReference.cache

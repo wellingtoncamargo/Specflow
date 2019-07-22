@@ -13,9 +13,9 @@ namespace FrameWork.Steps.WebSteps
     public class CalculoDoValorDoIRSteps
     {
         IWebDriver Driver;
+        string path = @"C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\bin\Debug\netcoreapp2.1\";
         private readonly string uri = "https://www.calcule.net/trabalhista/calculo-imposto-de-renda-irrf/";
         private static Screenshot ss;
-        string path = @"C:\Users\wncg\source\repos\FrameWork\FrameWork\Util\";
         private static ConcurrentDictionary<string, string> _returnVariables = new ConcurrentDictionary<string, string>();
 
 
@@ -106,7 +106,7 @@ namespace FrameWork.Steps.WebSteps
             Assert.AreEqual(valor, p0);
         }
 
-        [Given(@"Eu salvo o valor '(.*)' como '(.*)'")]
+        [Given(@"Eu salvo '(.*)' com o valor '(.*)'")]
         public void GivenEuSalvoOValorComo(string p0, string p1)
         {
             _returnVariables.TryAdd(p1, p0);
@@ -120,7 +120,7 @@ namespace FrameWork.Steps.WebSteps
             //Use it as you want now
             string screenshot = ss.AsBase64EncodedString;
             byte[] screenshotAsByteArray = ss.AsByteArray;
-            ss.SaveAsFile($@"C:\Users\wncg\source\repos\FrameWork\FrameWork\Util\Screenshot\{DateTime.Now.ToString("ddMMyyyyHHmmssffff") + p0}", ScreenshotImageFormat.Png); //use any of the built in image formating
+            ss.SaveAsFile($@"C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Util\Screenshot\{DateTime.Now.ToString("ddMMyyyyHHmmssffff") + p0}", ScreenshotImageFormat.Png); //use any of the built in image formating
             ss.ToString();//same as string screenshot = ss.AsBase64EncodedString;
             Thread.Sleep(1000);
         }
