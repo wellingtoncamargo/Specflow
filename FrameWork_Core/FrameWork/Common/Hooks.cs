@@ -7,7 +7,6 @@ using AventStack.ExtentReports.Reporter;
 using AventStack.ExtentReports.Reporter.Configuration;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
-using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -26,7 +25,7 @@ namespace FrameWork.Common
         private static ExtentTest scenario; // nodo para o Scenario
         private static AventStack.ExtentReports.ExtentReports extent; // objeto do ExtentReports que será criado
         private static ExtentHtmlReporter reporter; // objeto do ExtentReports que será criado
-        IWebDriver Browser;
+
         // aqui estou salvando na pasta bin/debug do projeto, o arquivo de relatório chamado ExtentReportAmazon.html
         private static readonly string PathReport = $"{AppDomain.CurrentDomain.BaseDirectory}/ExtentReport.html";
 
@@ -66,11 +65,11 @@ namespace FrameWork.Common
         public void InsertReportingSteps()
         {
             // Captura de tela no momento do erro.
-            if (ScenarioContext.Current.TestError != null)
-            {
-                Browser = ScenarioContext.Current.GetWebDriver();
-                Util.Screen.TakeScreenshot(Browser);
-            }
+            //if (ScenarioContext.Current.TestError != null)
+            //{
+            //    Browser = ScenarioContext.Current.GetWebDriver();
+            //    Util.Screen.TakeScreenshot(Browser);
+            //}
 
             //Captura dos steps
             var stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
