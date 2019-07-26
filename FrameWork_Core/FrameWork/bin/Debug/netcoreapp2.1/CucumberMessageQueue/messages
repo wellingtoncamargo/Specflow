@@ -355,4 +355,342 @@ $8b3949ea-f5de-4854-b3a9-8b6cedcfb083£ΩΧι”Òο±r
 δΩΧι€‡Ο€SpecFlow6*4
 $74eaaa3c-1b63-4722-b030-ac12a02504c2δΩΧιΔΕέΌ9B7
 $74eaaa3c-1b63-4722-b030-ac12a02504c2ηΩΧιΜ€h6*4
-$9bfbe314-737e-4c8e-800f-e8799925980aηΩΧι¬ΧΏ
+$9bfbe314-737e-4c8e-800f-e8799925980aηΩΧι¬ΧΏr
+Μ‹Ψι°―ΘρSpecFlow6*4
+$58157d1a-d169-4c8f-a654-9bcf46d7f664Μ‹Ψιό’Έ²9B7
+$58157d1a-d169-4c8f-a654-9bcf46d7f664Ρ‹Ψι°ΊθG5*3
+$499d4687-bd23-4033-b546-162bc74169bcÒ‹Ψι€•ώr
+«ΨιΤλΌSpecFlow6*4
+$76c89afa-ef6b-4cc1-9b85-b8de5bc0f9f8«ΨιψχΨΛ5*3
+$c3798d0e-6ae9-420b-99b1-0c8378de7211―Ψιθ¦«<r
+οΨιΐ”ΩdSpecFlow6*4
+$56e5ec9d-5d2c-46d8-ad84-8688e430556bοΨιόΆΆΡ6*4
+$5624c5f7-e81d-4f91-85b2-a6934fefab87σΨιόίΏr
+‘ΨιΌ%SpecFlow5*3
+$3deb14d1-adfc-4af3-97fc-fa2a7bd15271‘Ψιπΐ“}9B7
+$3deb14d1-adfc-4af3-97fc-fa2a7bd15271”‘ΨιΈ°–e6*4
+$a62c7688-0139-4783-8e08-3a966b9e1aad”‘Ψιθ€ωÒr
+–’Ψι΄νSpecFlow6*4
+$448abbe7-d1d2-4ef2-adc5-ed1b0b63f2c1–’Ψι¤αªr
+γ”Ψιά’qSpecFlow6*4
+$3e115eb8-2990-41ff-84e2-a532267b203dγ”Ψι΄α‡¬:B8
+$3e115eb8-2990-41ff-84e2-a532267b203dε”ΨιΈΜσΘ6*4
+$bea7c9df-2b11-49cd-b188-61bbad174c24ζ”ΨιªΔαr
+νΨιΨ¶δdSpecFlow6*4
+$33a4cf9a-1030-4e91-a88a-eec3e47a558eνΨι¬γ‹ζ:B8
+$33a4cf9a-1030-4e91-a88a-eec3e47a558eπΨιάιοτ6*4
+$ab1f3d38-2f04-4244-a6e4-f18ac3dcfb03ρΨι€πίοÒBΟ
+$ab1f3d38-2f04-4244-a6e4-f18ac3dcfb03ωΨικίΦ“System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Util\Screenshot\'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at OpenQA.Selenium.Screenshot.SaveAsFile(String fileName, ScreenshotImageFormat format)
+   at FrameWork.Common.Hooks.GetScreenShot.Capture(IWebDriver driver, String screenShotName) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Common\Hooks.cs:line 139
+   at FrameWork.Steps.WebSteps.CalculoDoValorDoIRSteps.DadoQueEuAcessoAPagina(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\WebSteps\WebSteps.cs:line 41
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+ΊΨιόώεSpecFlow6*4
+$649fdbb8-3f9f-44eb-91d8-665d49fe6babΊΨιΠ‡Π«:B8
+$649fdbb8-3f9f-44eb-91d8-665d49fe6bab½Ψι―ƒ’6*4
+$d6b8eba7-f737-49b7-a76e-2cd2034bc59aΎΨι„Χα–ζBγ
+$d6b8eba7-f737-49b7-a76e-2cd2034bc59aΖΨιΌ«ΡΏ¬§System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\ErrorScreenshots\Primeiro acesso.png'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at OpenQA.Selenium.Screenshot.SaveAsFile(String fileName, ScreenshotImageFormat format)
+   at FrameWork.Common.Hooks.GetScreenShot.Capture(IWebDriver driver, String screenShotName) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Common\Hooks.cs:line 139
+   at FrameWork.Steps.WebSteps.CalculoDoValorDoIRSteps.DadoQueEuAcessoAPagina(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\WebSteps\WebSteps.cs:line 41
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+ωΨιΨηΈpSpecFlow6*4
+$fd3ecbd1-0816-456e-835d-032607e33166ωΨιθΏΑΊ:B8
+$fd3ecbd1-0816-456e-835d-032607e33166ϋΨι•»ς6*4
+$3d232b84-b5cc-46d1-9960-a214314e6d20όΨιμ•ΚρζBγ
+$3d232b84-b5cc-46d1-9960-a214314e6d20ƒ Ψιΐ”ΙΒ¬§System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\ErrorScreenshots\Primeiro_acesso.png'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at OpenQA.Selenium.Screenshot.SaveAsFile(String fileName, ScreenshotImageFormat format)
+   at FrameWork.Common.Hooks.GetScreenShot.Capture(IWebDriver driver, String screenShotName) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Common\Hooks.cs:line 139
+   at FrameWork.Steps.WebSteps.CalculoDoValorDoIRSteps.DadoQueEuAcessoAPagina(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\WebSteps\WebSteps.cs:line 41
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+α΅Ψι°“SpecFlow5*3
+$63bd2633-d9ad-40f3-9bcd-d1e748626092β΅Ψι  ’:B8
+$63bd2633-d9ad-40f3-9bcd-d1e748626092δ΅Ψιπ­αΆ6*4
+$cab6b264-c6e4-4164-a6e8-84271f6eda07ε΅ΨιΤΦ²Μ¦
+B£
+
+$cab6b264-c6e4-4164-a6e8-84271f6eda07ο΅Ψιπζί”μ	η	NUnit.Framework.AssertionException:   Expected string length 9 but was 5. Strings differ at index 0.
+  Expected: "ConclusΓ£o"
+  But was:  "{msg}"
+  -----------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 129
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.ThenComparoSeESaoIguais(String p0, String p1) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 379
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+Β¦ΨιΈύξ±SpecFlow6*4
+$703ab9f9-5457-437a-ab2f-0ebb4196ee05Β¦Ψι¤¶•¦:B8
+$703ab9f9-5457-437a-ab2f-0ebb4196ee05Δ¦ΨιτΣ”Έ6*4
+$33007001-9ed3-4733-b570-26a11c17eba4Ε¦Ψι΄³¦μ¦
+B£
+
+$33007001-9ed3-4733-b570-26a11c17eba4Ξ¦ΨιΈƒόμ	η	NUnit.Framework.AssertionException:   Expected string length 9 but was 5. Strings differ at index 0.
+  Expected: "ConclusΓ£o"
+  But was:  "{msg}"
+  -----------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 129
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.ThenComparoSeESaoIguais(String p0, String p1) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 379
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+Ψ”γιΜ¦SpecFlow6*4
+$c643f635-a41f-49b5-8486-a93c535d377cΨ”γι€ώ¬λr
+ύγιόέ]SpecFlow6*4
+$597a13a9-a79f-4ee2-934b-9729900a95b8ύγιψ—λΔr
+»ΛζιΘ²ΞXSpecFlow6*4
+$c70dce7e-70c7-42ae-9059-ee44cbd1a22a»Λζι°Σ™ΒBΏ
+$c70dce7e-70c7-42ae-9059-ee44cbd1a22a½Λζι―ΐƒSystem.NullReferenceException: Object reference not set to an instance of an object.
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.DadoQueEuUseABaseURL(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 47
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+ΐΝζιψ΅£·SpecFlow6*4
+$5ec2648b-5e50-4344-b97a-d446ff35ac14ΐΝζιόσΑBΎ
+$5ec2648b-5e50-4344-b97a-d446ff35ac14ΓΝζιΔ»®ƒSystem.NullReferenceException: Object reference not set to an instance of an object.
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.DadoQueEuUseABaseURL(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 47
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+ΘΞζιΠι—SpecFlow6*4
+$20aef08b-5e28-44e2-a672-59124ae1a99fΘΞζι¨Μ¤ώΒBΏ
+$20aef08b-5e28-44e2-a672-59124ae1a99fΚΞζιςΚεƒSystem.NullReferenceException: Object reference not set to an instance of an object.
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.DadoQueEuUseABaseURL(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 47
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+ÒΦμιΠι²νSpecFlow6*4
+$051546fc-b74b-4fa2-9285-977dfdee95bbΣΦμιμω©ΝΑBΎ
+$051546fc-b74b-4fa2-9285-977dfdee95bbΧΦμιΜ§­~ƒSystem.NullReferenceException: Object reference not set to an instance of an object.
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.DadoQueEuUseABaseURL(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 47
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+¬Ωμι΄®ξUSpecFlow6*4
+$7147db00-d22d-4535-a843-1e2ac54da0f4¬Ωμι¤Β’ΒBΏ
+$7147db00-d22d-4535-a843-1e2ac54da0f4®Ωμι΄ ΗτƒSystem.NullReferenceException: Object reference not set to an instance of an object.
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.DadoQueEuUseABaseURL(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 47
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+­άμιόΫ‡‹SpecFlow6*4
+$6ba6c422-9df2-4ff5-be37-55c6f4c9bf3c­άμιΤΌ¤ΘΑBΎ
+$6ba6c422-9df2-4ff5-be37-55c6f4c9bf3c°άμιΔχύKƒSystem.NullReferenceException: Object reference not set to an instance of an object.
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.DadoQueEuUseABaseURL(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 47
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+·έμι¤ΡόΈSpecFlow5*3
+$1fb6534e-41a5-4441-8f78-8bfca5474ad2ΈέμιψΰαΒBΏ
+$1fb6534e-41a5-4441-8f78-8bfca5474ad2Ίέμι°¦ƒSystem.NullReferenceException: Object reference not set to an instance of an object.
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.DadoQueEuUseABaseURL(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 47
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+ΐήμιΐ„—.SpecFlow6*4
+$06e0f33a-e159-4db4-8885-c958092cbda3ΐήμιΌ—πΒBΏ
+$06e0f33a-e159-4db4-8885-c958092cbda3μήμιτ°Η„ƒSystem.NullReferenceException: Object reference not set to an instance of an object.
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.DadoQueEuUseABaseURL(String p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 47
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+ΐίμιΠ³§SpecFlow5*3
+$573e7e3e-4273-42a7-b4fd-8e079268d449ΑίμιΰΐϋAr
+ϋίμιΠ ³υSpecFlow6*4
+$1f24043b-9705-4cb4-8b88-c3105a53ab04ϋίμιμε©r
+Βθμιψ’SpecFlow6*4
+$7c765bb9-1c27-4af8-b0a6-13410425f2afΒθμι¬ΥΜΎ:B8
+$7c765bb9-1c27-4af8-b0a6-13410425f2afΖθμι¤°•r
+έκμιΌ£™SpecFlow5*3
+$763673e6-471d-498c-b2c0-bd2cde4d007cήκμι¬Λδ9B7
+$763673e6-471d-498c-b2c0-bd2cde4d007cακμιΤ„¦r
+ςμι΄ΚΝOSpecFlow6*4
+$e778c0ba-1525-448a-9404-f1a46a54b45cςμι°„ΤΩ9B7
+$e778c0ba-1525-448a-9404-f1a46a54b45cΆςμιΈ…Ur
+σΆνιψΜ¤¤SpecFlow6*4
+$94191b96-abe6-47f8-a594-2a9921073bd6σΆνιρ΅ΰ:B8
+$94191b96-abe6-47f8-a594-2a9921073bd6£νι€ΞΪ€r
+®¶νιΜ¬―/SpecFlow6*4
+$670081d8-76be-425a-b5b5-9c2df6acbe3d®¶νιόψϋ§:B8
+$670081d8-76be-425a-b5b5-9c2df6acbe3d³¶νι°”©r
+ς¶νιμ‰ΟSpecFlow6*4
+$ec6a6c39-abb7-462b-a404-23653886c053ς¶νιΠΠ—’Ξ
+BΛ
+
+$ec6a6c39-abb7-462b-a404-23653886c053χ¶νι¨ΌΧ”
+
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 2, position 4.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.Linq.JToken.ReadFrom(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JToken.Parse(String json, JsonLoadSettings settings)
+   at FrameWork.Page.Page_Object._ReturnCode(Int32 p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Page\Page.cs:line 91
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.EntaoRetornoDeveraSer(Int32 p0) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 240
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+―·νι¨ΠΛ<SpecFlow5*3
+$bd31f274-a988-4c19-a260-acb6fc4aa2a0―·νιΝz9B7
+$bd31f274-a988-4c19-a260-acb6fc4aa2a0³·νι„™Χ,r
+βΈνι€‚γrSpecFlow6*4
+$cb1d521e-f187-43de-bea9-b9f4f550238eβΈνι°Ω¦Έ:B8
+$cb1d521e-f187-43de-bea9-b9f4f550238eεΈνι Λυr
+ΰΉνι¬µπΟSpecFlow6*4
+$2bb05c1e-8764-4527-9345-9994e26e2305ΰΉνιΠνΙ:B8
+$2bb05c1e-8764-4527-9345-9994e26e2305γΉνιψΈΆr
+“ΌνιΜ€®SpecFlow6*4
+$91b2631f-7c3c-48e9-9a30-47800368c456“ΌνιάΕΧκ:B8
+$91b2631f-7c3c-48e9-9a30-47800368c456–Όνιψ”r
+‚ΏνιΠκοrSpecFlow6*4
+$87b77e86-613f-435d-9d67-909f600b2268‚ΏνιΤό€ήr
+‰Ώνι¤Ò¥SpecFlow5*3
+$5acbbcfa-61b0-4a2f-b3d5-7a95039d8617‰Ώνι”±ΖY:B8
+$5acbbcfa-61b0-4a2f-b3d5-7a95039d8617Ώνιμ–εΎr
+ΑΒνιΎΜ3SpecFlow5*3
+$c3efdd0d-8cf0-448d-a58b-6e0ccb510027ΑΒνι”»Ώv
+B
+
+$c3efdd0d-8cf0-448d-a58b-6e0ccb510027ΕΒνιΔYζ	α	NUnit.Framework.AssertionException:   Expected string length 4 but was 5. Strings differ at index 0.
+  Expected: "{12}"
+  But was:  "batel"
+  -----------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 129
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.ThenComparoSeESaoIguais(String p0, String p1) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 298
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+ ΔνιΌ°ώΛSpecFlow6*4
+$203af487-9e0b-4a93-9139-4d3e392bf74b ΔνιΘά† 
+B
+
+$203af487-9e0b-4a93-9139-4d3e392bf74b¤ΔνιΨ‘ÒΔζ	α	NUnit.Framework.AssertionException:   Expected string length 4 but was 5. Strings differ at index 0.
+  Expected: "{12}"
+  But was:  "batel"
+  -----------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 129
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.ThenComparoSeESaoIguais(String p0, String p1) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 298
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+ΉΕνιΜ²σ9SpecFlow5*3
+$6ed6524a-8f43-40b1-a8e6-53c7201fbceaΉΕνιτ”βy¨B¥
+$6ed6524a-8f43-40b1-a8e6-53c7201fbcea½ΕνιγΚ,ο
+κ
+NUnit.Framework.AssertionException:   String lengths are both 5. Strings differ at index 0.
+  Expected: "Batel"
+  But was:  "batel"
+  -----------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 129
+   at FrameWork.Page.Page_Object._Compara(String p0, String p1) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Page\Page.cs:line 167
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.ThenComparoSeESaoIguais(String p0, String p1) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 288
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+ΖνιΌΥ#SpecFlow5*3
+$ec28688e-0099-4d59-afc0-0d297c213aacΖνιΠωΌ`©B¦
+$ec28688e-0099-4d59-afc0-0d297c213aacΖνι¶ΪΘο
+κ
+NUnit.Framework.AssertionException:   String lengths are both 5. Strings differ at index 0.
+  Expected: "Batel"
+  But was:  "batel"
+  -----------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 129
+   at FrameWork.Page.Page_Object._Compara(String p0, String p1) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Page\Page.cs:line 167
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.ThenComparoSeESaoIguais(String p0, String p1) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 288
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+ΫΖνιτϋ”7SpecFlow5*3
+$de61e7c9-6d96-471c-bcce-b6954926de21ΫΖνιΘΚοt:B8
+$de61e7c9-6d96-471c-bcce-b6954926de21ίΖνιΓΟr
+ξΖνιδϋ†‘SpecFlow5*3
+$8e5d0fee-adcc-40cf-be1c-f89911d573f5οΖνι¤ω#©B¦
+$8e5d0fee-adcc-40cf-be1c-f89911d573f5σΖνιΤ‚ª¦ο
+κ
+NUnit.Framework.AssertionException:   String lengths are both 5. Strings differ at index 0.
+  Expected: "Batel"
+  But was:  "batel"
+  -----------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 129
+   at FrameWork.Page.Page_Object._Compara(String p0, String p1) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Page\Page.cs:line 166
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.ThenComparoSeESaoIguais(String p0, String p1) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 288
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+Ηνι οήθSpecFlow6*4
+$8fcf945d-a742-419c-bbfe-1542dfbe7fe4Ηνι ΘΚ¥¨B¥
+$8fcf945d-a742-419c-bbfe-1542dfbe7fe4΅ΗνιΪςEο
+κ
+NUnit.Framework.AssertionException:   String lengths are both 5. Strings differ at index 0.
+  Expected: "Batel"
+  But was:  "batel"
+  -----------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 129
+   at FrameWork.Page.Page_Object._Compara(String p0, String p1) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Page\Page.cs:line 166
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.ThenComparoSeESaoIguais(String p0, String p1) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 288
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+ΘΗνιψ™ά‘SpecFlow5*3
+$09f7c466-64e0-419a-b33d-1ee63c231935ΙΗνιΔΩ9B7
+$09f7c466-64e0-419a-b33d-1ee63c231935ΝΗνιάΎΟ]r
+ΙΘνιΔ‚΅MSpecFlow6*4
+$934943a9-0b74-431b-8fc1-a21bd05031a5ΙΘνιτήά‰:B8
+$934943a9-0b74-431b-8fc1-a21bd05031a5ΝΘνιΜυόΉr
+‰ΙνιΜψSpecFlow6*4
+$3ece7ca0-b99b-4a85-890e-90488db6c933‰ΙνιΠ“¶Ι:B8
+$3ece7ca0-b99b-4a85-890e-90488db6c933ΙνιΘή†r
+°ΙνιΘΈΤΚSpecFlow6*4
+$ab530f71-b428-4572-a08e-bccb42c79aa6°Ινι¤Ω¬‡9B7
+$ab530f71-b428-4572-a08e-bccb42c79aa6΄ΙνιΏβ?r
+σΟνι ‹κ“SpecFlow5*3
+$177753f7-4645-4f92-8361-cf01025ae1bbτΟνιΰΊ:B8
+$177753f7-4645-4f92-8361-cf01025ae1bbχΟνιγβπr
+ΊΠνιΘύφSpecFlow5*3
+$db273f51-725e-4058-9fc3-d695ddc567bd»Πνιό§%ΈBµ
+$db273f51-725e-4058-9fc3-d695ddc567bdΏΠνι¬€Ώ„ώ
+ω
+NUnit.Framework.AssertionException:   Expected string length 4 but was 5. Strings differ at index 0.
+  Expected: "{12}"
+  But was:  "Batel"
+  -----------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in D:\a\1\s\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in D:\a\1\s\src\NUnitFramework\framework\Assert.Equality.cs:line 129
+   at FrameWork.Page.Page_Object._ComparaSeIgual(String p0, String p1) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Page\Page.cs:line 205
+   at FrameWork.Steps.ApiSteps.TesteAPISteps.ThenComparoSeESaoIguais(String p0, String p1) in C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Steps\ApiSteps\ApiSteps.cs:line 274
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 69
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 421
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
+„Ρνιτ„ΰSpecFlow6*4
+$5e2193db-fc8f-4abf-ab14-50436a28e0bd„Ρνιά®Ò 9B7
+$5e2193db-fc8f-4abf-ab14-50436a28e0bdΡνιδΑπ$

@@ -7,6 +7,7 @@ using AventStack.ExtentReports.Reporter;
 using AventStack.ExtentReports.Reporter.Configuration;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -25,6 +26,7 @@ namespace FrameWork.Common
         private static ExtentTest scenario; // nodo para o Scenario
         private static AventStack.ExtentReports.ExtentReports extent; // objeto do ExtentReports que será criado
         private static ExtentHtmlReporter reporter; // objeto do ExtentReports que será criado
+        private readonly String ScreenshotFilePath = $@"C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Util\Screenshot\";
 
         // aqui estou salvando na pasta bin/debug do projeto, o arquivo de relatório chamado ExtentReportAmazon.html
         private static readonly string PathReport = $"{AppDomain.CurrentDomain.BaseDirectory}/ExtentReport.html";
@@ -64,11 +66,12 @@ namespace FrameWork.Common
         [AfterStep]
         public void InsertReportingSteps()
         {
+
             // Captura de tela no momento do erro.
             //if (ScenarioContext.Current.TestError != null)
             //{
-            //    Browser = ScenarioContext.Current.GetWebDriver();
-            //    Util.Screen.TakeScreenshot(Browser);
+            //        Browser = ScenarioContext.Current.ScenarioInfo.Title;
+            //        Util.Screen.TakeScreenshot(Browser);
             //}
 
             //Captura dos steps
@@ -88,6 +91,7 @@ namespace FrameWork.Common
                     scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Pass(ScenarioContext.Current.StepContext.StepInfo.MultilineText);
                 else if (stepType == "And")
                     scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text).Pass(ScenarioContext.Current.StepContext.StepInfo.MultilineText);
+                scenario.AddScreenCaptureFromPath(ScreenshotFilePath);
             }
             //Validação dos steps caso o mesmo seja executados com insucesso.
             else if (ScenarioContext.Current.TestError != null)
@@ -99,7 +103,7 @@ namespace FrameWork.Common
                 else if (stepType == "Then")
                     scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.Message);
                 //Adição da captura de tela de erro no relatório
-                //featureName.AddScreenCaptureFromPath(ScreenshotFilePath);
+                featureName.AddScreenCaptureFromPath(ScreenshotFilePath);
             }
 
             //Status da Execução do Testes Pendente
@@ -122,6 +126,20 @@ namespace FrameWork.Common
                     scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Info("Step Definition Pending");
             }
 
+        }
+
+        public class GetScreenShot
+        {
+            public static string Capture(IWebDriver driver, string screenShotName)
+            {
+                ITakesScreenshot ts = (ITakesScreenshot)driver;
+                Screenshot screenshot = ts.GetScreenshot();
+                string pth = System.Reflection.Assembly.GetCallingAssembly().CodeBase;
+                string finalpth = pth.Substring(0, pth.LastIndexOf("bin")) + "Util\\Screenshot\\" + screenShotName + ".png";
+                string localpath = new Uri(finalpth).LocalPath;
+                screenshot.SaveAsFile(localpath, ScreenshotImageFormat.Png);
+                return localpath;
+            }
         }
 
         [AfterTestRun]

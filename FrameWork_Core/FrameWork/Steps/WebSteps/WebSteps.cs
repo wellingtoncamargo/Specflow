@@ -5,6 +5,10 @@ using System;
 using System.Collections.Concurrent;
 using System.Threading;
 using TechTalk.SpecFlow;
+using static FrameWork.Common.Hooks;
+using AventStack.ExtentReports;
+using AventStack.ExtentReports.Reporter;
+
 
 namespace FrameWork.Steps.WebSteps
 {
@@ -17,6 +21,8 @@ namespace FrameWork.Steps.WebSteps
         private readonly string uri = "https://www.calcule.net/trabalhista/calculo-imposto-de-renda-irrf/";
         private static Screenshot ss;
         private static ConcurrentDictionary<string, string> _returnVariables = new ConcurrentDictionary<string, string>();
+        AventStack.ExtentReports.ExtentReports extent;
+        ExtentTest test;
 
 
         [BeforeScenario]
@@ -37,7 +43,8 @@ namespace FrameWork.Steps.WebSteps
         {
             this.Driver.Navigate().GoToUrl(p0);
             this.Driver.Manage().Window.Maximize();
-            _Screenshot("_Login.png");
+            GetScreenShot.Capture(this.Driver, "Primeiro_acesso");
+            
         }
 
         [Given(@"preencho o campo '(.*)' com o valor '(.*)'")]
@@ -48,7 +55,6 @@ namespace FrameWork.Steps.WebSteps
                 p0 = p0.Replace($"{{{variable.Key}}}", variable.Value);
             }
             this.Driver.FindElement(By.Id(p0)).SendKeys(p1);
-            _Screenshot($"_Texto.png");
         }
 
         [When(@"preencho o campo '(.*)' com o valor '(.*)'")]
@@ -60,7 +66,6 @@ namespace FrameWork.Steps.WebSteps
             }
             //this.Driver.FindElement(By.Id(p0)).Clear();
             this.Driver.FindElement(By.Id(p0)).SendKeys(p1);
-            _Screenshot($"_Texto.png");
         }
 
         [When(@"clico em '(.*)'")]
@@ -71,7 +76,6 @@ namespace FrameWork.Steps.WebSteps
                 p0 = p0.Replace($"{{{variable.Key}}}", variable.Value);
             }
             this.Driver.FindElement(By.XPath(p0)).Click();
-            _Screenshot($"_Click.png");
         }
 
         [Then(@"clico em '(.*)'")]
@@ -82,7 +86,6 @@ namespace FrameWork.Steps.WebSteps
                 p0 = p0.Replace($"{{{variable.Key}}}", variable.Value);
             }
             this.Driver.FindElement(By.XPath(p0)).Click();
-            _Screenshot($"_Click.png");
         }
 
         [Given(@"clico em '(.*)'")]
@@ -93,7 +96,6 @@ namespace FrameWork.Steps.WebSteps
                 p0 = p0.Replace($"{{{variable.Key}}}", variable.Value);
             }
             this.Driver.FindElement(By.XPath(p0)).Click();
-            _Screenshot($"_Click.png");
         }
 
 
@@ -109,7 +111,7 @@ namespace FrameWork.Steps.WebSteps
         [Given(@"Eu salvo '(.*)' com o valor '(.*)'")]
         public void GivenEuSalvoOValorComo(string p0, string p1)
         {
-            _returnVariables.TryAdd(p1, p0);
+            _returnVariables.TryAdd(p0, p1);
 
         }
 
@@ -124,5 +126,15 @@ namespace FrameWork.Steps.WebSteps
             ss.ToString();//same as string screenshot = ss.AsBase64EncodedString;
             Thread.Sleep(1000);
         }
+
+        //public void CaptureScreenshot()
+        //{
+        //    test = extent.Stats("CaptureScreenshot");
+        //   // this.Driver = new ChromeDriver();
+        //    this.Driver.Navigate().GoToUrl();
+        //    string title = this.Driver.Title;
+        //    Assert.AreEqual("Home - Automation Test", title);
+        //    test.Log(Status.Pass, "Test Passed");
+        //}
     }
 }
