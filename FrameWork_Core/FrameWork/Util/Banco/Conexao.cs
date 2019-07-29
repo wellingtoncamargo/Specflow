@@ -11,7 +11,7 @@ namespace FrameWork.Util.Banco
         SqlConnection conn = new SqlConnection();
         public Conexao()
         {
-            conn.ConnectionString = "Data Source=10.55.234.4;Initial Catalog=db_sicred_h2h_acoescriticas;Persist Security Info=True;User ID=sicred;Password=ps&sicred";
+            conn.ConnectionString = "Conection_String";
         }
 
         public SqlConnection conectar()

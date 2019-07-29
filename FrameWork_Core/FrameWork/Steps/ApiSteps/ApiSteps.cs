@@ -21,7 +21,7 @@ namespace FrameWork.Steps.ApiSteps
         private RestRequest _restRequest;
         private RestClient _restClient;
         private IRestResponse Res;
-        public Page_Object _page = new Page_Object();
+        public Page_Steps _page = new Page_Steps();
 
 
         [Given(@"que eu use a BaseURL '(.*)'")]

@@ -12,7 +12,7 @@ using System.Threading;
 using TechTalk.SpecFlow;
 namespace FrameWork.Page
 {
-    public class Page_Object
+    public class Page_Steps
     {
         private RestRequest _restRequest;
         private RestClient _restClient;
