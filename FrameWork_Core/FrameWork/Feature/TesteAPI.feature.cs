@@ -13,6 +13,8 @@
 namespace FrameWork.Feature
 {
     using TechTalk.SpecFlow;
+    using System;
+    using System.Linq;
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.1.0.0")]
@@ -23,6 +25,8 @@ namespace FrameWork.Feature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
+        
+        private string[] _featureTags = ((string[])(null));
         
 #line 1 "TesteAPI.feature"
 #line hidden
@@ -48,7 +52,7 @@ namespace FrameWork.Feature
         }
         
         [NUnit.Framework.TearDownAttribute()]
-        public virtual void ScenarioTearDown()
+        public virtual void TestTearDown()
         {
             testRunner.OnScenarioEnd();
         }
@@ -74,26 +78,52 @@ namespace FrameWork.Feature
         [NUnit.Framework.CategoryAttribute("Teste")]
         public virtual void ConsultaCep()
         {
+            string[] tagsOfScenario = new string[] {
+                    "Teste"};
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Consulta Cep", null, new string[] {
                         "Teste"});
 #line 5
 this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
 #line 6
  testRunner.Given("que eu use a BaseURL \'BaseUrl\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
 #line 7
  testRunner.And("Eu use a api \'/cep/80240260\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
 #line 8
  testRunner.When("realizo um GET", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
 #line 9
  testRunner.Then("retorno devera ser 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
 #line 10
  testRunner.And("as informações solicitadas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
 #line 12
  testRunner.Given("Eu salvo a variavel \'bairro\' como \'12\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
 #line 13
  testRunner.Then("comparo se \'{12}\' e \'Batel\' sao iguais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
+            }
             this.ScenarioCleanup();
         }
     }

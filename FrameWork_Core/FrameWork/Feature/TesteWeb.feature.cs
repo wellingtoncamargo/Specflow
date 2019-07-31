@@ -13,6 +13,8 @@
 namespace FrameWork.Feature
 {
     using TechTalk.SpecFlow;
+    using System;
+    using System.Linq;
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.1.0.0")]
@@ -23,6 +25,8 @@ namespace FrameWork.Feature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
+        
+        private string[] _featureTags = ((string[])(null));
         
 #line 1 "TesteWeb.feature"
 #line hidden
@@ -48,7 +52,7 @@ namespace FrameWork.Feature
         }
         
         [NUnit.Framework.TearDownAttribute()]
-        public virtual void ScenarioTearDown()
+        public virtual void TestTearDown()
         {
             testRunner.OnScenarioEnd();
         }
@@ -73,16 +77,36 @@ namespace FrameWork.Feature
         [NUnit.Framework.DescriptionAttribute("01-Massa de Dados")]
         public virtual void _01_MassaDeDados()
         {
+            string[] tagsOfScenario = ((string[])(null));
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01-Massa de Dados", null, ((string[])(null)));
 #line 4
 this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
 #line 5
  testRunner.Given("Eu salvo \'TextBox\' com o valor \'//h2[@class=\'entry-title\']//a[contains(text(),\'Nã" +
-                    "o use assertTrue para validar textos\')]\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 6
- testRunner.Given("Eu salvo \'msg\' com o valor \'//h2[contains(text(),\'Conclusão\')]\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+                        "o use assertTrue para validar textos\')]\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
+#line 6
+ testRunner.Given("Eu salvo \'msg\' com o valor \'//*[@id=\"post-3972\"]/div/div/h2[4]\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            }
             this.ScenarioCleanup();
         }
         
@@ -90,17 +114,38 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.DescriptionAttribute("02-Realizando o Login")]
         public virtual void _02_RealizandoOLogin()
         {
+            string[] tagsOfScenario = ((string[])(null));
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02-Realizando o Login", null, ((string[])(null)));
 #line 9
 this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
 #line 10
  testRunner.Given("que acesso a pagina \'http://www.eliasnogueira.com/\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
 #line 11
  testRunner.When("clico em \'{TextBox}\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
- testRunner.Then("comparo se \'Conclusão\' e \'{msg}\' sao iguais", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
+#line 12
+ testRunner.Then("vejo \'{msg}\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
             this.ScenarioCleanup();
         }
     }

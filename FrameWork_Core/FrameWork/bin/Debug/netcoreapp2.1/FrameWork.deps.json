@@ -1,14 +1,14 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "c26559c6d398c8ccd42f98deaac06e64d2590363"
+    "signature": "78be195e4cb5b29e99d297ffbdd104208c6b7129"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "FrameWork/1.0.0": {
         "dependencies": {
-          "AWSSDK.SQS": "3.3.100.49",
+          "Appium.WebDriver": "4.0.0.6-beta",
           "Dapper": "1.60.6",
           "ExtentReports.Core": "1.0.2",
           "Microsoft.Extensions.Configuration": "3.0.0-preview6.19304.6",
@@ -24,31 +24,28 @@
           "Selenium.WebDriver": "3.141.0",
           "Selenium.WebDriver.ChromeDriver": "75.0.3770.140",
           "Selenium.WebDriver.IEDriver": "3.141.59",
-          "SpecFlow": "3.1.2-beta",
-          "SpecFlow.NUnit": "3.1.2-beta",
-          "SpecFlow.Tools.MsBuild.Generation": "3.1.2-beta",
+          "SpecFlow": "3.1.20-beta",
+          "SpecFlow.NUnit": "3.1.20-beta",
+          "SpecFlow.Tools.MsBuild.Generation": "3.1.20-beta",
           "coverlet.msbuild": "2.6.3"
         },
         "runtime": {
           "FrameWork.dll": {}
         }
       },
-      "AWSSDK.Core/3.3.103.13": {
-        "runtime": {
-          "lib/netstandard2.0/AWSSDK.Core.dll": {
-            "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.103.13"
-          }
-        }
-      },
-      "AWSSDK.SQS/3.3.100.49": {
+      "Appium.WebDriver/4.0.0.6-beta": {
         "dependencies": {
-          "AWSSDK.Core": "3.3.103.13"
+          "Castle.Core": "4.4.0",
+          "DotNetSeleniumExtras.PageObjects": "3.11.0",
+          "Newtonsoft.Json": "12.0.2",
+          "Selenium.Support": "3.141.0",
+          "Selenium.WebDriver": "3.141.0",
+          "System.Drawing.Common": "4.5.1"
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.SQS.dll": {
-            "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.100.49"
+          "lib/netstandard2.0/Appium.Net.dll": {
+            "assemblyVersion": "4.0.0.6",
+            "fileVersion": "4.0.0.6"
           }
         }
       },
@@ -80,14 +77,14 @@
         }
       },
       "coverlet.msbuild/2.6.3": {},
-      "Cucumber.Messages/1.0.0-beta.5": {
+      "Cucumber.Messages/3.0.1": {
         "dependencies": {
           "Google.Protobuf": "3.7.0"
         },
         "runtime": {
           "lib/netstandard2.0/Cucumber.Messages.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
           }
         }
       },
@@ -112,6 +109,17 @@
           "lib/netstandard2.0/DnsClient.dll": {
             "assemblyVersion": "1.2.0.0",
             "fileVersion": "1.2.0.0"
+          }
+        }
+      },
+      "DotNetSeleniumExtras.PageObjects/3.11.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "3.141.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {
+            "assemblyVersion": "3.11.0.0",
+            "fileVersion": "3.11.0.0"
           }
         }
       },
@@ -656,6 +664,22 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/4.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
       "MongoDB.Bson/2.9.0-beta1": {
         "dependencies": {
           "System.Collections.NonGeneric": "4.3.0",
@@ -937,10 +961,10 @@
       },
       "Selenium.WebDriver.ChromeDriver/75.0.3770.140": {},
       "Selenium.WebDriver.IEDriver/3.141.59": {},
-      "SpecFlow/3.1.2-beta": {
+      "SpecFlow/3.1.20-beta": {
         "dependencies": {
           "BoDi": "1.4.1",
-          "Cucumber.Messages": "1.0.0-beta.5",
+          "Cucumber.Messages": "3.0.1",
           "Gherkin": "6.0.0",
           "System.Configuration.ConfigurationManager": "4.5.0",
           "System.ValueTuple": "4.4.0",
@@ -949,25 +973,25 @@
         "runtime": {
           "lib/netstandard2.0/TechTalk.SpecFlow.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.1.2.27418"
+            "fileVersion": "3.1.20.56919"
           }
         }
       },
-      "SpecFlow.NUnit/3.1.2-beta": {
+      "SpecFlow.NUnit/3.1.20-beta": {
         "dependencies": {
           "NUnit": "3.12.0",
-          "SpecFlow": "3.1.2-beta"
+          "SpecFlow": "3.1.20-beta"
         },
         "runtime": {
           "lib/netstandard2.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.1.2.27418"
+            "fileVersion": "3.1.20.56919"
           }
         }
       },
-      "SpecFlow.Tools.MsBuild.Generation/3.1.2-beta": {
+      "SpecFlow.Tools.MsBuild.Generation/3.1.20-beta": {
         "dependencies": {
-          "SpecFlow": "3.1.2-beta"
+          "SpecFlow": "3.1.20-beta"
         }
       },
       "System.AppContext/4.3.0": {
@@ -1227,6 +1251,31 @@
       "System.Diagnostics.Tracing/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Drawing.Common/4.5.1": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          },
+          "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
         }
       },
       "System.Dynamic.Runtime/4.3.0": {
@@ -2117,19 +2166,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AWSSDK.Core/3.3.103.13": {
+    "Appium.WebDriver/4.0.0.6-beta": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-apAjBmQj54luWb+o9Bky7N6Ho4vHeMTO3Z3A5TnfYZTNsRuxcx9cO/XfFY46i821agqoIaS6aCmc7sZWj/TosA==",
-      "path": "awssdk.core/3.3.103.13",
-      "hashPath": "awssdk.core.3.3.103.13.nupkg.sha512"
-    },
-    "AWSSDK.SQS/3.3.100.49": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-z8J4Bq6OtHToJxlx6b73k2FZ7Io3pmc4wTMFQHxTC/0ZQ7KTCiiA1L0aroj/T/WHmiAbrXtOCJvZWrX7OgV0BA==",
-      "path": "awssdk.sqs/3.3.100.49",
-      "hashPath": "awssdk.sqs.3.3.100.49.nupkg.sha512"
+      "sha512": "sha512-RPXoY0OQb6cBRo3IF5gfDk7kKPiofFoQ+7XYarbJlMB9fOVfmrUZWGV76D/AFR3zd46kZkOIlqLA9Kj+jEiLMA==",
+      "path": "appium.webdriver/4.0.0.6-beta",
+      "hashPath": "appium.webdriver.4.0.0.6-beta.nupkg.sha512"
     },
     "BoDi/1.4.1": {
       "type": "package",
@@ -2152,12 +2194,12 @@
       "path": "coverlet.msbuild/2.6.3",
       "hashPath": "coverlet.msbuild.2.6.3.nupkg.sha512"
     },
-    "Cucumber.Messages/1.0.0-beta.5": {
+    "Cucumber.Messages/3.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7+5iIGPilcmCb8PdLJ2kZhwuVgZL7GZ7nhKsJ7WZImQZ6AWFdlz7xcLS3J/Od/KSD/Jw/WhlOz82d7Um3MOEWg==",
-      "path": "cucumber.messages/1.0.0-beta.5",
-      "hashPath": "cucumber.messages.1.0.0-beta.5.nupkg.sha512"
+      "sha512": "sha512-voN/ynUIA6GmQjnyp++PPB3B4x0we6/UuCRVzbEAv2HMnOd3x7LK4Z6S0BJAzOIzK6IPw8qLOUv0Mql31M8YXQ==",
+      "path": "cucumber.messages/3.0.1",
+      "hashPath": "cucumber.messages.3.0.1.nupkg.sha512"
     },
     "Dapper/1.60.6": {
       "type": "package",
@@ -2172,6 +2214,13 @@
       "sha512": "sha512-P34wUkeqU4FoQiOMV8OjpdeDZKs4d3r+VlHuKJ6eO5feiZgna3+9MF5orHRUn3DAv1g/HPE5hlkGucmxmsFfBw==",
       "path": "dnsclient/1.2.0",
       "hashPath": "dnsclient.1.2.0.nupkg.sha512"
+    },
+    "DotNetSeleniumExtras.PageObjects/3.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DJCLQ3beq1fzqpeQ5jTZwDqmzbOD2Xxsb/jCyShYam88CNwGGn5aBBqu4LVSj0sy0Ai76OauQQncYlC48VvQUQ==",
+      "path": "dotnetseleniumextras.pageobjects/3.11.0",
+      "hashPath": "dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512"
     },
     "ExtentReports.Core/1.0.2": {
       "type": "package",
@@ -2354,6 +2403,13 @@
       "sha512": "sha512-dA36TlNVn/XfrZtmf0fiI/z1nd3Wfp2QVzTdj26pqgP9LFWq0i1hYEUAW50xUjGFYn1+/cP3KGuxT2Yn1OUNBQ==",
       "path": "microsoft.win32.registry/4.4.0",
       "hashPath": "microsoft.win32.registry.4.4.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LuI1oG+24TUj1ZRQQjM5Ew73BKnZE5NZ/7eAdh1o8ST5dPhUnJvIkiIn2re3MwnkRy6ELRnvEbBxHP8uALKhJw==",
+      "path": "microsoft.win32.systemevents/4.5.0",
+      "hashPath": "microsoft.win32.systemevents.4.5.0.nupkg.sha512"
     },
     "MongoDB.Bson/2.9.0-beta1": {
       "type": "package",
@@ -2593,26 +2649,26 @@
       "path": "selenium.webdriver.iedriver/3.141.59",
       "hashPath": "selenium.webdriver.iedriver.3.141.59.nupkg.sha512"
     },
-    "SpecFlow/3.1.2-beta": {
+    "SpecFlow/3.1.20-beta": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8k4mqjIOG2DPVh8sYBUpOkBcF1MXtLxZJ53aNBVT9MQKE29nzOKG5Bt2R7PgSSqo3BP0dQrAHCp/tH+yBId68A==",
-      "path": "specflow/3.1.2-beta",
-      "hashPath": "specflow.3.1.2-beta.nupkg.sha512"
+      "sha512": "sha512-IdL78GhvV1QPnt9cdqvRRStdEJCLEfGLLFSbHIBT7PZeVBbe+AXhM7+0DT8OHpwCBMxhw+s8HzJMmIjzuZct7A==",
+      "path": "specflow/3.1.20-beta",
+      "hashPath": "specflow.3.1.20-beta.nupkg.sha512"
     },
-    "SpecFlow.NUnit/3.1.2-beta": {
+    "SpecFlow.NUnit/3.1.20-beta": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tLrpLTSBwNd5LsGkIg+7Ubp7tpRCvLsEIxg2BkuubBj9rgp0U8aPwo0EJ1YMNAZHHaUYcf/fqRHVGiYrAPP8Ow==",
-      "path": "specflow.nunit/3.1.2-beta",
-      "hashPath": "specflow.nunit.3.1.2-beta.nupkg.sha512"
+      "sha512": "sha512-6PdCnRZvJvFggCqfU7HC0vzjkWEHTtg1u68coeCwPiGkEYS5eAvyQmWwevYzWWcA/Vu4cHxINgzfxQQssO7q1A==",
+      "path": "specflow.nunit/3.1.20-beta",
+      "hashPath": "specflow.nunit.3.1.20-beta.nupkg.sha512"
     },
-    "SpecFlow.Tools.MsBuild.Generation/3.1.2-beta": {
+    "SpecFlow.Tools.MsBuild.Generation/3.1.20-beta": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1oZphwiTJUvV1nGDjGvKVETqADKU4qQR1FfijYizgctY38Se1xz9CoftrM+/41YHsCAHuZY5wzx51mAvIbJ4fA==",
-      "path": "specflow.tools.msbuild.generation/3.1.2-beta",
-      "hashPath": "specflow.tools.msbuild.generation.3.1.2-beta.nupkg.sha512"
+      "sha512": "sha512-T1ItUb9Az4swCAgXXjZj1+8xq1aL8HD1kHGIy7UhqBJCiUW9oNOjmG7mAAUH94nkC4jZSIeh/uLA7LhRdNeByg==",
+      "path": "specflow.tools.msbuild.generation/3.1.20-beta",
+      "hashPath": "specflow.tools.msbuild.generation.3.1.20-beta.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",
@@ -2767,6 +2823,13 @@
       "sha512": "sha512-rswfv0f/Cqkh78rA5S8eN8Neocz234+emGCtTF3lxPY96F+mmmUen6tbn0glN6PMvlKQb9bPAY5e9u7fgPTkKw==",
       "path": "system.diagnostics.tracing/4.3.0",
       "hashPath": "system.diagnostics.tracing.4.3.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GiyeGi/v4xYDz1vCNFwFvhz9k1XddOG7VD3jxRqzRBCbTHji+s3HxxbxtoymuK4OadEpgotI8zQ5+GEEH9sUEQ==",
+      "path": "system.drawing.common/4.5.1",
+      "hashPath": "system.drawing.common.4.5.1.nupkg.sha512"
     },
     "System.Dynamic.Runtime/4.3.0": {
       "type": "package",

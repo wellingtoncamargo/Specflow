@@ -2,25 +2,21 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "AWSSDK.Core/3.3.103.13": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/AWSSDK.Core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/AWSSDK.Core.dll": {}
-        }
-      },
-      "AWSSDK.SQS/3.3.100.49": {
+      "Appium.WebDriver/4.0.0.6-beta": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.103.13, 3.4.0)"
+          "Castle.Core": "4.3.1",
+          "DotNetSeleniumExtras.PageObjects": "3.11.0",
+          "Newtonsoft.Json": "12.0.1",
+          "Selenium.Support": "3.141.0",
+          "Selenium.WebDriver": "3.141.0",
+          "System.Drawing.Common": "4.5.1"
         },
         "compile": {
-          "lib/netstandard2.0/AWSSDK.SQS.dll": {}
+          "lib/netstandard2.0/Appium.Net.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/AWSSDK.SQS.dll": {}
+          "lib/netstandard2.0/Appium.Net.dll": {}
         }
       },
       "BoDi/1.4.1": {
@@ -63,7 +59,7 @@
           "build/coverlet.msbuild.targets": {}
         }
       },
-      "Cucumber.Messages/1.0.0-beta.5": {
+      "Cucumber.Messages/3.0.1": {
         "type": "package",
         "dependencies": {
           "Google.Protobuf": "3.7.0"
@@ -99,6 +95,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/DnsClient.dll": {}
+        }
+      },
+      "DotNetSeleniumExtras.PageObjects/3.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "3.10.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {}
         }
       },
       "ExtentReports.Core/1.0.2": {
@@ -882,6 +890,24 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "MongoDB.Bson/2.9.0-beta1": {
         "type": "package",
         "dependencies": {
@@ -1285,11 +1311,11 @@
           "build/Selenium.WebDriver.IEDriver.targets": {}
         }
       },
-      "SpecFlow/3.1.2-beta": {
+      "SpecFlow/3.1.20-beta": {
         "type": "package",
         "dependencies": {
           "BoDi": "1.4.1",
-          "Cucumber.Messages": "1.0.0-beta.5",
+          "Cucumber.Messages": "3.0.1",
           "Gherkin": "6.0.0",
           "System.Configuration.ConfigurationManager": "4.5.0",
           "System.ValueTuple": "4.4.0",
@@ -1302,11 +1328,11 @@
           "lib/netstandard2.0/TechTalk.SpecFlow.dll": {}
         }
       },
-      "SpecFlow.NUnit/3.1.2-beta": {
+      "SpecFlow.NUnit/3.1.20-beta": {
         "type": "package",
         "dependencies": {
           "NUnit": "3.11.0",
-          "SpecFlow": "[3.1.2-beta]"
+          "SpecFlow": "[3.1.20-beta]"
         },
         "compile": {
           "lib/netstandard2.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll": {}
@@ -1319,10 +1345,10 @@
           "build/SpecFlow.NUnit.targets": {}
         }
       },
-      "SpecFlow.Tools.MsBuild.Generation/3.1.2-beta": {
+      "SpecFlow.Tools.MsBuild.Generation/3.1.20-beta": {
         "type": "package",
         "dependencies": {
-          "SpecFlow": "[3.1.2-beta]"
+          "SpecFlow": "[3.1.20-beta]"
         },
         "build": {
           "build/SpecFlow.Tools.MsBuild.Generation.props": {},
@@ -1717,6 +1743,29 @@
         },
         "compile": {
           "ref/netstandard1.5/_._": {}
+        }
+      },
+      "System.Drawing.Common/4.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "Microsoft.Win32.SystemEvents": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Dynamic.Runtime/4.3.0": {
@@ -3025,93 +3074,18 @@
     }
   },
   "libraries": {
-    "AWSSDK.Core/3.3.103.13": {
-      "sha512": "apAjBmQj54luWb+o9Bky7N6Ho4vHeMTO3Z3A5TnfYZTNsRuxcx9cO/XfFY46i821agqoIaS6aCmc7sZWj/TosA==",
+    "Appium.WebDriver/4.0.0.6-beta": {
+      "sha512": "RPXoY0OQb6cBRo3IF5gfDk7kKPiofFoQ+7XYarbJlMB9fOVfmrUZWGV76D/AFR3zd46kZkOIlqLA9Kj+jEiLMA==",
       "type": "package",
-      "path": "awssdk.core/3.3.103.13",
-      "hasTools": true,
+      "path": "appium.webdriver/4.0.0.6-beta",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "awssdk.core.3.3.103.13.nupkg.sha512",
-        "awssdk.core.nuspec",
-        "lib/MonoAndroid10/AWSSDK.Core.XML",
-        "lib/MonoAndroid10/AWSSDK.Core.dll",
-        "lib/MonoAndroid10/AWSSDK.Core.pdb",
-        "lib/MonoTouch10/AWSSDK.Core.XML",
-        "lib/MonoTouch10/AWSSDK.Core.dll",
-        "lib/Xamarin.Mac20/AWSSDK.Core.XML",
-        "lib/Xamarin.Mac20/AWSSDK.Core.dll",
-        "lib/Xamarin.iOS10/AWSSDK.Core.XML",
-        "lib/Xamarin.iOS10/AWSSDK.Core.dll",
-        "lib/net35/AWSSDK.Core.dll",
-        "lib/net35/AWSSDK.Core.pdb",
-        "lib/net35/AWSSDK.Core.xml",
-        "lib/net45/AWSSDK.Core.dll",
-        "lib/net45/AWSSDK.Core.pdb",
-        "lib/net45/AWSSDK.Core.xml",
-        "lib/netstandard1.3/AWSSDK.Core.dll",
-        "lib/netstandard1.3/AWSSDK.Core.pdb",
-        "lib/netstandard1.3/AWSSDK.Core.xml",
-        "lib/netstandard2.0/AWSSDK.Core.dll",
-        "lib/netstandard2.0/AWSSDK.Core.pdb",
-        "lib/netstandard2.0/AWSSDK.Core.xml",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.XML",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.dll",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.pdb",
-        "lib/uap/AWSSDK.Core.XML",
-        "lib/uap/AWSSDK.Core.dll",
-        "lib/uap/AWSSDK.Core.pdb",
-        "lib/win8/AWSSDK.Core.XML",
-        "lib/win8/AWSSDK.Core.dll",
-        "lib/win8/AWSSDK.Core.pdb",
-        "lib/wp8/AWSSDK.Core.XML",
-        "lib/wp8/AWSSDK.Core.dll",
-        "lib/wp8/AWSSDK.Core.pdb",
-        "lib/wpa81/AWSSDK.Core.XML",
-        "lib/wpa81/AWSSDK.Core.dll",
-        "lib/wpa81/AWSSDK.Core.pdb",
-        "tools/account-management.ps1"
-      ]
-    },
-    "AWSSDK.SQS/3.3.100.49": {
-      "sha512": "z8J4Bq6OtHToJxlx6b73k2FZ7Io3pmc4wTMFQHxTC/0ZQ7KTCiiA1L0aroj/T/WHmiAbrXtOCJvZWrX7OgV0BA==",
-      "type": "package",
-      "path": "awssdk.sqs/3.3.100.49",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "analyzers/dotnet/cs/AWSSDK.SQS.CodeAnalysis.dll",
-        "awssdk.sqs.3.3.100.49.nupkg.sha512",
-        "awssdk.sqs.nuspec",
-        "lib/MonoAndroid10/AWSSDK.SQS.XML",
-        "lib/MonoAndroid10/AWSSDK.SQS.dll",
-        "lib/MonoTouch10/AWSSDK.SQS.XML",
-        "lib/MonoTouch10/AWSSDK.SQS.dll",
-        "lib/MonoTouch10/AWSSDK.SQS.pdb",
-        "lib/Xamarin.iOS10/AWSSDK.SQS.XML",
-        "lib/Xamarin.iOS10/AWSSDK.SQS.dll",
-        "lib/net35/AWSSDK.SQS.dll",
-        "lib/net35/AWSSDK.SQS.pdb",
-        "lib/net35/AWSSDK.SQS.xml",
-        "lib/net45/AWSSDK.SQS.dll",
-        "lib/net45/AWSSDK.SQS.pdb",
-        "lib/net45/AWSSDK.SQS.xml",
-        "lib/netstandard1.3/AWSSDK.SQS.dll",
-        "lib/netstandard1.3/AWSSDK.SQS.pdb",
-        "lib/netstandard1.3/AWSSDK.SQS.xml",
-        "lib/netstandard2.0/AWSSDK.SQS.dll",
-        "lib/netstandard2.0/AWSSDK.SQS.pdb",
-        "lib/netstandard2.0/AWSSDK.SQS.xml",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SQS.XML",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SQS.dll",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SQS.pdb",
-        "lib/uap/AWSSDK.SQS.XML",
-        "lib/uap/AWSSDK.SQS.dll",
-        "lib/uap/AWSSDK.SQS.pdb",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
+        "LICENSE.txt",
+        "appium.webdriver.4.0.0.6-beta.nupkg.sha512",
+        "appium.webdriver.nuspec",
+        "lib/net45/Appium.Net.dll",
+        "lib/netstandard2.0/Appium.Net.dll"
       ]
     },
     "BoDi/1.4.1": {
@@ -3214,14 +3188,14 @@
         "coverlet.msbuild.nuspec"
       ]
     },
-    "Cucumber.Messages/1.0.0-beta.5": {
-      "sha512": "7+5iIGPilcmCb8PdLJ2kZhwuVgZL7GZ7nhKsJ7WZImQZ6AWFdlz7xcLS3J/Od/KSD/Jw/WhlOz82d7Um3MOEWg==",
+    "Cucumber.Messages/3.0.1": {
+      "sha512": "voN/ynUIA6GmQjnyp++PPB3B4x0we6/UuCRVzbEAv2HMnOd3x7LK4Z6S0BJAzOIzK6IPw8qLOUv0Mql31M8YXQ==",
       "type": "package",
-      "path": "cucumber.messages/1.0.0-beta.5",
+      "path": "cucumber.messages/3.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "cucumber.messages.1.0.0-beta.5.nupkg.sha512",
+        "cucumber.messages.3.0.1.nupkg.sha512",
         "cucumber.messages.nuspec",
         "lib/net45/Cucumber.Messages.dll",
         "lib/netstandard2.0/Cucumber.Messages.dll"
@@ -3261,6 +3235,21 @@
         "lib/netstandard1.3/DnsClient.xml",
         "lib/netstandard2.0/DnsClient.dll",
         "lib/netstandard2.0/DnsClient.xml"
+      ]
+    },
+    "DotNetSeleniumExtras.PageObjects/3.11.0": {
+      "sha512": "DJCLQ3beq1fzqpeQ5jTZwDqmzbOD2Xxsb/jCyShYam88CNwGGn5aBBqu4LVSj0sy0Ai76OauQQncYlC48VvQUQ==",
+      "type": "package",
+      "path": "dotnetseleniumextras.pageobjects/3.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
+        "dotnetseleniumextras.pageobjects.nuspec",
+        "lib/net35/SeleniumExtras.PageObjects.dll",
+        "lib/net40/SeleniumExtras.PageObjects.dll",
+        "lib/net45/SeleniumExtras.PageObjects.dll",
+        "lib/netstandard2.0/SeleniumExtras.PageObjects.dll"
       ]
     },
     "ExtentReports.Core/1.0.2": {
@@ -4289,6 +4278,26 @@
         "version.txt"
       ]
     },
+    "Microsoft.Win32.SystemEvents/4.5.0": {
+      "sha512": "LuI1oG+24TUj1ZRQQjM5Ew73BKnZE5NZ/7eAdh1o8ST5dPhUnJvIkiIn2re3MwnkRy6ELRnvEbBxHP8uALKhJw==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "ref/net461/Microsoft.Win32.SystemEvents.dll",
+        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "MongoDB.Bson/2.9.0-beta1": {
       "sha512": "hrLXeLl+lld5s8B3ZAbPgnGRS8Tph7fZQ+LVqO7hnxg8L8cRH+RrosXQ9QtjOw+ZOm6xJ+MkEZk9CkHfXyEgIg==",
       "type": "package",
@@ -4947,10 +4956,10 @@
         "selenium.webdriver.iedriver.nuspec"
       ]
     },
-    "SpecFlow/3.1.2-beta": {
-      "sha512": "8k4mqjIOG2DPVh8sYBUpOkBcF1MXtLxZJ53aNBVT9MQKE29nzOKG5Bt2R7PgSSqo3BP0dQrAHCp/tH+yBId68A==",
+    "SpecFlow/3.1.20-beta": {
+      "sha512": "IdL78GhvV1QPnt9cdqvRRStdEJCLEfGLLFSbHIBT7PZeVBbe+AXhM7+0DT8OHpwCBMxhw+s8HzJMmIjzuZct7A==",
       "type": "package",
-      "path": "specflow/3.1.2-beta",
+      "path": "specflow/3.1.20-beta",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4962,17 +4971,19 @@
         "lib/net45/TechTalk.SpecFlow.ExternalAnnotations.xml",
         "lib/net45/TechTalk.SpecFlow.dll",
         "lib/net45/TechTalk.SpecFlow.pdb",
+        "lib/net45/TechTalk.SpecFlow.xml",
         "lib/netstandard2.0/TechTalk.SpecFlow.ExternalAnnotations.xml",
         "lib/netstandard2.0/TechTalk.SpecFlow.dll",
         "lib/netstandard2.0/TechTalk.SpecFlow.pdb",
-        "specflow.3.1.2-beta.nupkg.sha512",
+        "lib/netstandard2.0/TechTalk.SpecFlow.xml",
+        "specflow.3.1.20-beta.nupkg.sha512",
         "specflow.nuspec"
       ]
     },
-    "SpecFlow.NUnit/3.1.2-beta": {
-      "sha512": "tLrpLTSBwNd5LsGkIg+7Ubp7tpRCvLsEIxg2BkuubBj9rgp0U8aPwo0EJ1YMNAZHHaUYcf/fqRHVGiYrAPP8Ow==",
+    "SpecFlow.NUnit/3.1.20-beta": {
+      "sha512": "6PdCnRZvJvFggCqfU7HC0vzjkWEHTtg1u68coeCwPiGkEYS5eAvyQmWwevYzWWcA/Vu4cHxINgzfxQQssO7q1A==",
       "type": "package",
-      "path": "specflow.nunit/3.1.2-beta",
+      "path": "specflow.nunit/3.1.20-beta",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4989,14 +5000,14 @@
         "lib/net45/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb",
         "lib/netstandard2.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll",
         "lib/netstandard2.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb",
-        "specflow.nunit.3.1.2-beta.nupkg.sha512",
+        "specflow.nunit.3.1.20-beta.nupkg.sha512",
         "specflow.nunit.nuspec"
       ]
     },
-    "SpecFlow.Tools.MsBuild.Generation/3.1.2-beta": {
-      "sha512": "1oZphwiTJUvV1nGDjGvKVETqADKU4qQR1FfijYizgctY38Se1xz9CoftrM+/41YHsCAHuZY5wzx51mAvIbJ4fA==",
+    "SpecFlow.Tools.MsBuild.Generation/3.1.20-beta": {
+      "sha512": "T1ItUb9Az4swCAgXXjZj1+8xq1aL8HD1kHGIy7UhqBJCiUW9oNOjmG7mAAUH94nkC4jZSIeh/uLA7LhRdNeByg==",
       "type": "package",
-      "path": "specflow.tools.msbuild.generation/3.1.2-beta",
+      "path": "specflow.tools.msbuild.generation/3.1.20-beta",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5012,7 +5023,7 @@
         "licenses/Gherkin-LICENSE-MIT.txt",
         "licenses/Newtonsoft.Json-LICENSE-MIT.md",
         "licenses/System.ValueTuple-LICENSE-MIT.txt",
-        "specflow.tools.msbuild.generation.3.1.2-beta.nupkg.sha512",
+        "specflow.tools.msbuild.generation.3.1.20-beta.nupkg.sha512",
         "specflow.tools.msbuild.generation.nuspec",
         "tasks/net471/BoDi.dll",
         "tasks/net471/Cucumber.Messages.dll",
@@ -6179,6 +6190,39 @@
         "ref/xamarinwatchos10/_._",
         "system.diagnostics.tracing.4.3.0.nupkg.sha512",
         "system.diagnostics.tracing.nuspec"
+      ]
+    },
+    "System.Drawing.Common/4.5.1": {
+      "sha512": "GiyeGi/v4xYDz1vCNFwFvhz9k1XddOG7VD3jxRqzRBCbTHji+s3HxxbxtoymuK4OadEpgotI8zQ5+GEEH9sUEQ==",
+      "type": "package",
+      "path": "system.drawing.common/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Drawing.Common.dll",
+        "ref/netstandard2.0/System.Drawing.Common.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "system.drawing.common.4.5.1.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Dynamic.Runtime/4.3.0": {
@@ -9702,7 +9746,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "AWSSDK.SQS >= 3.3.100.49",
+      "Appium.WebDriver >= 4.0.0.6-beta",
       "Dapper >= 1.60.6",
       "ExtentReports.Core >= 1.0.2",
       "Microsoft.Extensions.Configuration >= 3.0.0-preview6.19304.6",
@@ -9719,9 +9763,9 @@
       "Selenium.WebDriver >= 3.141.0",
       "Selenium.WebDriver.ChromeDriver >= 75.0.3770.140",
       "Selenium.WebDriver.IEDriver >= 3.141.59",
-      "SpecFlow >= 3.1.2-beta",
-      "SpecFlow.NUnit >= 3.1.2-beta",
-      "SpecFlow.Tools.MsBuild.Generation >= 3.1.2-beta",
+      "SpecFlow >= 3.1.20-beta",
+      "SpecFlow.NUnit >= 3.1.20-beta",
+      "SpecFlow.Tools.MsBuild.Generation >= 3.1.20-beta",
       "coverlet.msbuild >= 2.6.3"
     ]
   },
@@ -9766,9 +9810,9 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
-          "AWSSDK.SQS": {
+          "Appium.WebDriver": {
             "target": "Package",
-            "version": "[3.3.100.49, )"
+            "version": "[4.0.0.6-beta, )"
           },
           "Dapper": {
             "target": "Package",
@@ -9837,15 +9881,15 @@
           },
           "SpecFlow": {
             "target": "Package",
-            "version": "[3.1.2-beta, )"
+            "version": "[3.1.20-beta, )"
           },
           "SpecFlow.NUnit": {
             "target": "Package",
-            "version": "[3.1.2-beta, )"
+            "version": "[3.1.20-beta, )"
           },
           "SpecFlow.Tools.MsBuild.Generation": {
             "target": "Package",
-            "version": "[3.1.2-beta, )"
+            "version": "[3.1.20-beta, )"
           },
           "coverlet.msbuild": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers",

@@ -43,7 +43,7 @@ namespace FrameWork.Steps.WebSteps
         {
             this.Driver.Navigate().GoToUrl(p0);
             this.Driver.Manage().Window.Maximize();
-            GetScreenShot.Capture(this.Driver, "Primeiro_acesso");
+            GetScreenShot.Capture(this.Driver, p0);
             
         }
 
@@ -55,6 +55,7 @@ namespace FrameWork.Steps.WebSteps
                 p0 = p0.Replace($"{{{variable.Key}}}", variable.Value);
             }
             this.Driver.FindElement(By.Id(p0)).SendKeys(p1);
+
         }
 
         [When(@"preencho o campo '(.*)' com o valor '(.*)'")]
@@ -66,6 +67,7 @@ namespace FrameWork.Steps.WebSteps
             }
             //this.Driver.FindElement(By.Id(p0)).Clear();
             this.Driver.FindElement(By.Id(p0)).SendKeys(p1);
+            GetScreenShot.Capture(this.Driver, p0);
         }
 
         [When(@"clico em '(.*)'")]
@@ -76,6 +78,7 @@ namespace FrameWork.Steps.WebSteps
                 p0 = p0.Replace($"{{{variable.Key}}}", variable.Value);
             }
             this.Driver.FindElement(By.XPath(p0)).Click();
+            GetScreenShot.Capture(this.Driver, p0);
         }
 
         [Then(@"clico em '(.*)'")]
@@ -86,6 +89,7 @@ namespace FrameWork.Steps.WebSteps
                 p0 = p0.Replace($"{{{variable.Key}}}", variable.Value);
             }
             this.Driver.FindElement(By.XPath(p0)).Click();
+            GetScreenShot.Capture(this.Driver, p0);
         }
 
         [Given(@"clico em '(.*)'")]
@@ -96,16 +100,22 @@ namespace FrameWork.Steps.WebSteps
                 p0 = p0.Replace($"{{{variable.Key}}}", variable.Value);
             }
             this.Driver.FindElement(By.XPath(p0)).Click();
+            GetScreenShot.Capture(this.Driver, p0);
         }
 
 
         [Then(@"vejo '(.*)'")]
         public void EntaoVejo(string p0)
         {
-            string valor = this.Driver.FindElement(By.XPath("//*[@id='calcform']/table/tbody/tr[2]/td")).Text;
+            foreach (var variable in _returnVariables)
+            {
+                p0 = p0.Replace($"{{{variable.Key}}}", variable.Value);
+            }
+            string valor = this.Driver.FindElement(By.XPath(p0)).Text;
             //Thread.Sleep(1000);
-            Console.WriteLine("Pelo Assert");
-            Assert.AreEqual(valor, p0);
+            Console.WriteLine("Conclusão");
+            Assert.AreEqual(valor, "Conclusão");
+            GetScreenShot.Capture(this.Driver, p0);
         }
 
         [Given(@"Eu salvo '(.*)' com o valor '(.*)'")]
@@ -122,7 +132,7 @@ namespace FrameWork.Steps.WebSteps
             //Use it as you want now
             string screenshot = ss.AsBase64EncodedString;
             byte[] screenshotAsByteArray = ss.AsByteArray;
-            ss.SaveAsFile($@"C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Util\Screenshot\{DateTime.Now.ToString("ddMMyyyyHHmmssffff") + p0}", ScreenshotImageFormat.Png); //use any of the built in image formating
+            ss.SaveAsFile($@"C:\Users\wncg\source\Specflow\FrameWork_Core\FrameWork\Util\Screenshot\{p0}", ScreenshotImageFormat.Png); //use any of the built in image formating  DateTime.Now.ToString("ddMMyyyyHHmmssffff") 
             ss.ToString();//same as string screenshot = ss.AsBase64EncodedString;
             Thread.Sleep(1000);
         }

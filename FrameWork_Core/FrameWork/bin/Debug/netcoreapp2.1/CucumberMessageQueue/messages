@@ -693,4 +693,149 @@ NUnit.Framework.AssertionException:   Expected string length 4 but was 5. String
    at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 342r
 „ÑíéŒô„àSpecFlow6*4
 $5e2193db-fc8f-4abf-ab14-50436a28e0bd„ÑíéÜ®Ò 9B7
-$5e2193db-fc8f-4abf-ab14-50436a28e0bdˆÑíéäÁğ$
+$5e2193db-fc8f-4abf-ab14-50436a28e0bdˆÑíéäÁğ$r
+Üˆıé˜ğüSpecFlow6*4
+$7affe14c-beaf-4fd0-9d3e-1d17d8234343ÜˆıéÔ÷ğ£:B8
+$7affe14c-beaf-4fd0-9d3e-1d17d8234343äˆıé”‰Òõr
+ô‹ıé Ü¹ùSpecFlow6*4
+$4b942215-67d1-427d-ab70-d7cc7f6a0484ô‹ıéÄôì¯:B8
+$4b942215-67d1-427d-ab70-d7cc7f6a0484õ‹ıé´–Œœr
+¸ıéüµ£—SpecFlow6*4
+$2ee13cf8-40a7-4a61-848d-811fe7aaf312¸ıéÔı÷Ò³B°
+$2ee13cf8-40a7-4a61-848d-811fe7aaf312ºıéÀ¶ DúõNo matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"Eu salvo '(.*)' com o valor '(.*)'entry-title'(.*)'NÃ£o use assertTrue para validar textos'(.*)'")]
+        public void GivenEuSalvoComOValorEntry_TitleNaoUseAssertTrueParaValidarTextos(string textBox0, string p1, string p2, string p3)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Eu salvo '(.*)' com o valor '(.*)'ConclusÃ£o'(.*)'")]
+        public void GivenEuSalvoComOValorConclusao(string msg0, string p1, string p2)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+}
+6*4
+$9adc9dee-afa4-4343-b7e5-f23a93a0c150ºıé´·ÌBÉ
+$9adc9dee-afa4-4343-b7e5-f23a93a0c150ºıéÌÕ’¦’No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"que acesso a pagina '(.*)'")]
+        public void GivenQueAcessoAPagina(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [When(@"clico em '(.*)'")]
+        public void WhenClicoEm(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+}
+r
+ĞÅ†êÀ³â‡k*i
+$2136fbdd-21b7-4cca-a574-9d6e4f067270ĞÅ†ê¬ùê—3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X649B7
+$2136fbdd-21b7-4cca-a574-9d6e4f067270ÒÅ†ê¤å™r
+†Ì†êŒ†¡«k*i
+$db6b3ccc-1040-4b55-9c30-c0013c39b683†Ì†ê›Øğ3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64:B8
+$db6b3ccc-1040-4b55-9c30-c0013c39b683ŠÌ†êè¦Íšk*i
+$6dde42cd-682b-4df9-86c3-277343e913bb‹Ì†êüä×ç3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64r
+è×†êœË¬Õk*i
+$8349ed18-2079-41a5-a424-a4dcaf6b4bc6è×†ê°‘à™3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X649B7
+$8349ed18-2079-41a5-a424-a4dcaf6b4bc6ë×†ê”Šúj*h
+$413ef888-76a3-4267-8c37-9f649e432eafì×†êÄâÑ\3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64r
+¾Ú†ê¸ìšÁk*i
+$23513613-1c78-47b8-a7c7-3b502e919aa7¾Ú†ê¨Œ¦Š3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64:B8
+$23513613-1c78-47b8-a7c7-3b502e919aa7ÂÚ†êä…´ök*i
+$6f491e37-64de-4ca1-9e47-dfd6aa8e8b06ÃÚ†ê°¢3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64r
+Û†ê”õ¹j*h
+$e55df3d7-a23d-4da8-96b5-dde8e6ad24f1‘Û†êÄ¬”#3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64:B8
+$e55df3d7-a23d-4da8-96b5-dde8e6ad24f1•Û†êÀ»Óµk*i
+$3340cf63-ac25-42b9-b4cb-1d1f0b8666cd–Û†ê¼¨Ê±3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64j*h
+$7dffa85d-adef-4dbf-820d-6a13bb1fb50d§Û†êÜ®®g3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64:B8
+$7dffa85d-adef-4dbf-820d-6a13bb1fb50dªÛ†êÔ®™¤r
+¼İ†ê€ƒ¶ík*i
+$cc47de5c-67e0-4a28-9ac7-c7a6bfd37d87¼İ†êÈÔ¨±3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64:B8
+$cc47de5c-67e0-4a28-9ac7-c7a6bfd37d87¿İ†êˆ¶Ë»k*i
+$9cf0b1ed-e624-4440-888c-3fe9e60f8eaaÀİ†êô€²ˆ3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64r
+¤Ş†êˆìÕÓk*i
+$5384104e-562b-468f-b5f2-584cb84ccff4¤Ş†êÈÁº»3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64:B8
+$5384104e-562b-468f-b5f2-584cb84ccff4¨Ş†êâøj*h
+$b2ce2f46-8a26-4d77-8afc-45c92d0e8644©Ş†ê¼Áói3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64r
+ğŞ†êğ›¢Õk*i
+$d941713e-4bf8-4790-89de-3dc45ce449e2ğŞ†ê„¦Ë‡3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64:B8
+$d941713e-4bf8-4790-89de-3dc45ce449e2óŞ†ê´¢ŒÕj*h
+$38db275a-2958-45f3-aa12-09636e044eceõŞ†êğ¶Ÿ3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64r
+„à†ê˜É­Æk*i
+$9395a905-27d3-41fa-94c1-0144f086b54d„à†êÈûÈ‰3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64:B8
+$9395a905-27d3-41fa-94c1-0144f086b54dˆà†ê€¡”­k*i
+$05494960-fe3f-42f1-9474-4876dd3cc159‰à†êœá¹Ñ3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X649B7
+$05494960-fe3f-42f1-9474-4876dd3cc159”à†êÜ‡’r
+Õá†êˆÅ™j*h
+$cd41155d-5b36-456f-9510-c5bcdbf2e975Öá†êÔ¥Ã3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64:B8
+$cd41155d-5b36-456f-9510-c5bcdbf2e975Øá†êÀâ­Èj*h
+$9c079fd4-69e0-4b86-956e-1553f00daa36Úá†ê´‚„3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64:B8
+$9c079fd4-69e0-4b86-956e-1553f00daa36áá†ê˜ˆòr
+æä†êÀ§šük*i
+$b3d7314a-a5a5-459c-acc2-b509af9c4330æä†ê”‹¤Á3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64:B8
+$b3d7314a-a5a5-459c-acc2-b509af9c4330éä†êüÅÕ±k*i
+$d73f953c-e0cc-4fcc-b7a8-34bea8369f85êä†êÄıË¼3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X649B7
+$d73f953c-e0cc-4fcc-b7a8-34bea8369f85òä†ê´—ÕRr
+Œç†êôÁ„j*h
+$b2200374-e615-48d9-b172-1b925e433b27ç†ê€ÇâA3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64:B8
+$b2200374-e615-48d9-b172-1b925e433b27ç†êÈñık*i
+$e0206646-8b79-4729-91e8-3a353e9708a0ç†êˆ´¸Õ3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64:B8
+$e0206646-8b79-4729-91e8-3a353e9708a0šç†êØ“È¼r
+£ê†ê¨›ôÿk*i
+$de8042ac-3bb6-4b2b-ab50-17c1dc69ecc5£ê†êŒèòÅ3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64:B8
+$de8042ac-3bb6-4b2b-ab50-17c1dc69ecc5¦ê†êô¹«k*i
+$c567b827-2d26-4b79-89bb-a1938dcf8c65§ê†ê¼õœË3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X649B7
+$c567b827-2d26-4b79-89bb-a1938dcf8c65°ê†êüÃØr
+ìî†êèë‹¼k*i
+$8da739eb-a085-4e2a-b302-6c55be3b5837ìî†êäîä„3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X649B7
+$8da739eb-a085-4e2a-b302-6c55be3b5837ïî†êÄšnk*i
+$4fba3f16-d7e2-4e70-ab80-3e4fc582c834ğî†êàÜÈ×3
+SpecFlow3.1Microsoft Windows 10.0.17134 "X64
